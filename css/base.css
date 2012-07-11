@@ -1206,7 +1206,7 @@ ul.comments {
 #blogs {
 	float: right;
 	max-height: 604px;
-	overflow-x: hidden;
+	overflow: hidden;
 	width: 315px;
 }
 #blogs article {
