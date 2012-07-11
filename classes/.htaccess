@@ -1,0 +1,5 @@
+authtype basic
+authgroupfile /dev/null
+authuserfile .htpassword.ghtpassword
+authname "Secure Area"
+require user 

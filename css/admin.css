@@ -1,0 +1,857 @@
+/* ADMIN */
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.images-box {
+	clear: both;
+	overflow: hidden;
+}
+.fold {
+display:block;
+position:absolute;
+text-indent:0;
+z-index: 999999;
+}
+.fold img, #banner .fold img, #gallery .fold img, #work .fold img {
+border:none;
+padding:0;
+margin:0;
+-webkit-box-shadow: none;
+box-shadow: none;
+}
+#admin_nav {
+width:39px;
+height:100%;
+background:#eeeeee;
+position:fixed;
+top:0;
+left:0;
+border-right:#cccccc 1px solid;
+}
+#admin_nav li {
+	padding:5px 5px 10px;
+	width:30px;
+	height:25px;
+}
+#admin_nav li.bg_sitemap {
+	background:transparent url('/img/share.png') no-repeat 6px 7px;
+}
+#props li.bg_add_page {
+	background:transparent url('/img/doc_plus.png') no-repeat 6px 7px;
+}
+#props li.bg_seo {
+	background:transparent url('/img/zoom.png') no-repeat 5px 7px;
+}
+#props li.bg_settings {
+	background:transparent url('/img/cog_alt.png') no-repeat 9px 9px;
+}
+#admin_nav li.bg_files {
+	background:transparent url('/img/icons/images.png') no-repeat 6px 7px;
+}
+#admin_nav li.bg_logout {
+	background:transparent url('/img/contact_card.png') no-repeat 6px 7px;
+}
+#admin_nav li.sel {
+	background-color:#FFFFFF;
+	border-top:1px solid #CCCCCC;
+	border-bottom:1px solid #CCCCCC;
+}
+	#admin_nav li a:link, #admin_nav li a:visited {
+		font:normal 1.1em/1em 'Helvetica Neue',Helvetica,Arial,Verdana,sans-serif;
+		font-weight:300;
+		* font-weight:bold;
+		letter-spacing:1px;
+		color:#FFFFFF;
+		width:30px;
+		height:30px;
+		left:4px;
+		letter-spacing:1px;
+		line-height:1em;
+		position:absolute;
+		text-decoration:none;
+		text-indent:-9009px;
+	}
+	#admin_nav li a:hover, #admin_nav li a:focus, #admin_nav li a:active, #admin_nav li.current a:link, #admin_nav li.current a:visited, #admin_nav li.current a:hover,#admin_nav li.current a:focus,#admin_nav li.current a:active {
+		color:#FFFFCC;
+		text-decoration:none;
+		border:#cccccc 1px solid;
+	}
+a.jqHTML_link:link,a.jqHTML_link:visited { color: #1C94C4; text-decoration:none; }
+a.jqHTML_link:hover,a.jqHTML_link:active,a.jqHTML_link:focus { text-decoration:underline; }
+span.error {
+display:block;
+}
+#admin input.submit {
+width:55px;
+background-color:#333333;
+color:#ffffff;
+border:none;
+margin-top:10px;
+}
+.add_new {
+display:none;
+}
+
+.ac_results {
+	padding: 0px;
+	border: 1px solid black;
+	background-color: white;
+	overflow: hidden;
+	z-index: 99999;
+}
+
+.ac_results ul {
+	width: 100%;
+	list-style-position: outside;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.ac_results li {
+	margin: 0px;
+	padding: 2px 5px;
+	cursor: default;
+	display: block;
+	/* 
+	if width will be 100% horizontal scrollbar will apear 
+	when scroll mode will be used
+	*/
+	/*width: 100%;*/
+	font: menu;
+	font-size: 14px;
+	/* 
+	it is very important, if line-height not setted or setted 
+	in relative units scroll will be broken in firefox
+	*/
+	line-height: 16px;
+	overflow: hidden;
+}
+
+.ac_loading {
+	background: white url('/img/ajax-loader.gif') right center no-repeat;
+}
+
+.ac_odd {
+	background-color: #eee;
+}
+
+.ac_over {
+	background-color: #94B53D;
+	color: white;
+}
+.create, .save, .delete, .close, .clear {
+width:auto;
+height:auto;
+margin:2px 5px 0 0;
+background-color:#E6E6E6;
+border:1px solid #999999;
+color:#555555;
+text-transform:capitalize;
+}
+.create, .delete, .clear {
+float:right;
+margin-right:0;
+}
+.save, .close {
+float:right;
+margin-right:20px;
+}
+.delete:hover, .close:hover, .clear:hover {
+background-color:#CC0000;
+color:#FFFFFF;
+}
+.create:hover, .save:hover {
+background-color:#91A023;
+color:#FFFFFF;
+}
+.entry div:hover {
+background:#eeeeee;
+}
+.grid a,.grid a:link,.grid a:active,.grid a:visited,.grid a:hover{
+color:#333333;
+text-decoration:none;
+border:none;
+}
+label {
+color:#000000;
+display:block;
+padding:3px 0;
+text-transform:uppercase;
+}
+.suggest {
+color:#a7a9ac;
+}
+.tip {
+color:#CC0000;
+display:none;
+}
+.hidelabel {
+	display:none;
+}
+.grid a,.grid a:link,.grid a:active,.grid a:visited,.grid a:hover{
+color:#333333;
+text-decoration:none;
+border:none;
+}
+label#message {
+padding-top:18px;
+}
+/* date picker */
+div.datepicker {
+	position: relative;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	width: 196px;
+	height: 147px;
+	position: absolute;
+	cursor: default;
+	top: 0;
+	left: 0;
+	display: none;
+    z-index:9999;
+}
+.datepickerContainer {
+	background: #121212;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+.datepickerBorderT {
+	position: absolute;
+	left: 10px;
+	top: 0;
+	right: 10px;
+	height: 10px;
+}
+.datepickerBorderB {
+	position: absolute;
+	left: 10px;
+	bottom: 0;
+	right: 10px;
+	height: 10px;
+}
+.datepickerBorderL {
+	position: absolute;
+	left: 0;
+	bottom: 10px;
+	top: 10px;
+	width: 10px;
+}
+.datepickerBorderR {
+	position: absolute;
+	right: 0;
+	bottom: 10px;
+	top: 10px;
+	width: 10px;
+}
+.datepickerBorderTL {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 10px;
+	height: 10px;
+}
+.datepickerBorderTR {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 10px;
+	height: 10px;
+}
+.datepickerBorderBL {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 10px;
+	height: 10px;
+}
+.datepickerBorderBR {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 10px;
+	height: 10px;
+}
+.datepickerHidden {
+	display: none;
+}
+div.datepicker table {
+	border-collapse:collapse;
+}
+div.datepicker a {
+	color: #ffffff;
+	text-decoration: none;
+	cursor: default;
+	outline: none;
+}
+div.datepicker table td {
+	text-align: right;
+	padding: 0;
+	margin: 0;
+}
+div.datepicker th {
+	text-align: center;
+	color: #666;
+	font-weight: normal;
+}
+div.datepicker tbody th {
+	text-align: left;
+}
+div.datepicker tbody a {
+	display: block;
+}
+.datepickerDays a {
+	width: 20px;
+	line-height: 16px;
+	height: 16px;
+	padding-right: 2px;
+}
+.datepickerYears a,
+.datepickerMonths a{
+	width: 39px;
+	line-height: 40px;
+	height: 40px;
+	text-align: center;
+}
+td.datepickerNotInMonth a {
+	color: #999;
+}
+tbody.datepickerDays td.datepickerSelected{
+	background: #FF00FF;
+}
+tbody.datepickerDays td.datepickerNotInMonth.datepickerSelected {
+	background: #cccccc;
+}
+tbody.datepickerYears td.datepickerSelected,
+tbody.datepickerMonths td.datepickerSelected{
+	background: #cccccc;
+}
+div.datepicker a:hover, div.datepicker td.datepickerNotInMonth a:hover {
+	color: #666666;
+}
+div.datepicker tbody th {
+	text-align: right;
+}
+.datepickerSpace div {
+	width: 20px;
+}
+.datepickerGoNext a,
+.datepickerGoPrev a,
+.datepickerMonth a {
+	text-align: center;
+	height: 10px;
+	line-height: 10px;
+}
+.datepickerGoNext a {
+	float: right;
+	width: 20px;
+}
+.datepickerGoPrev a {
+	float: left;
+	width: 20px;
+}
+table.datepickerViewDays tbody.datepickerMonths,
+table.datepickerViewDays tbody.datepickerYears,
+table.datepickerViewMonths tbody.datepickerDays,
+table.datepickerViewMonths tbody.datepickerYears,
+table.datepickerViewMonths tr.datepickerDoW,
+table.datepickerViewYears tbody.datepickerDays,
+table.datepickerViewYears tbody.datepickerMonths,
+table.datepickerViewYears tr.datepickerDoW {
+	display: none;
+}
+td.datepickerDisabled a,
+td.datepickerDisabled.datepickerNotInMonth a,
+td.datepickerDisabled a:hover {
+	color: #333;
+}
+td.datepickerSpecial a {
+	background: #700;
+}
+td.datepickerSpecial.datepickerSelected a {
+	background: #a00;
+}
+
+.datepickerContainer {
+	top:-1px;
+	left: 0;
+	overflow: hidden;
+	background: #b9b9b9;
+	padding:10px 7px 5px;
+}
+
+.datepicker {
+	position: absolute;
+	bottom: 0;
+	top: auto;
+}
+.datepickerBorderT,
+.datepickerBorderB,
+.datepickerBorderL,
+.datepickerBorderR,
+.datepickerBorderTL,
+.datepickerBorderTR,
+.datepickerBorderBL,
+.datepickerBorderBR {
+	background: transparent !important;
+}
+.datepicker a:hover{
+	color: #b6f063;
+}
+
+.datepickerWeek {
+display:none;
+}
+.calclose {
+text-align:right;
+display:none;
+}
+.datepickerDoW th {
+padding-top:7px;
+}
+
+span.calicon_p {
+cursor:pointer;
+height:14px;
+left:-24px;
+position:relative;
+top:2px;
+width:14px;
+z-index:8;
+}
+
+/* SITEMAP STYLER */
+
+#sitemap, #sitemap ul, #sitemap li{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+#sitemap{background:url('/img/line1.gif') repeat-y;}
+#sitemap li{
+	margin-top:1px;
+	position:relative;
+	width:100%;
+	font:normal 18px/1.4em Helvetica,Arial,Verdana,sans-serif;
+}
+/* IE leaves a blank space where span is added so this is to avoid that */
+* html #sitemap li{
+	float:left;
+	display:inline;
+}
+
+#sitemap li a{padding-left:28px;}
+#sitemap li span{float:left;position:absolute;top:5px;left:5px;width:13px;height:13px;cursor:auto;font-size:0;}
+#sitemap li span, #sitemap li span.collapsed{background:url('/img/collapsed.gif') no-repeat 0 0;} 
+#sitemap li span.expanded{background:url('/img/expanded.gif') no-repeat 0 0;}
+
+/* sub levels */
+
+#sitemap li ul{	
+	margin-left:90px;
+	background:url('/img/line1.gif') repeat-y;
+}
+#sitemap li li{
+	margin-top:10px;
+	background:url('/img/line2.gif') no-repeat 0 0;
+	font:normal 16px/1.4em Helvetica,Arial,Verdana,sans-serif;
+}
+#sitemap li li li{
+margin-top:0;
+font-weight:normal;
+}
+
+/* etc. */
+
+/* float fix */
+
+#sitemap:after, #sitemap ul:after{
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+#sitemap, #sitemap ul{display:block;}
+/*  \*/
+#sitemap, #sitemap ul{min-height:1%;}
+* html #sitemap, * html #sitemap ul{height:1%;}
+ /*  */
+#sitemap ul{}
+
+#props {
+background-color:#eeeeee;
+border-left:1px solid #CCCCCC;
+right:0;
+top:0;
+width:39px;
+position:fixed;
+height:100%;
+z-index:900000;
+}
+#leftpad {
+height:39px;
+}
+#rightpad {
+height:100px;
+}
+
+
+/* ADMIN LEFT NAV */
+#admin_nav {
+width:39px;
+height:100%;
+background:#eeeeee;
+position:fixed;
+top:0;
+left:0;
+border-right:#cccccc 1px solid;
+z-index:999999;
+}
+/* ADMIN RIGHT NAV */
+#props {
+background-color:#eeeeee;
+border-left:1px solid #CCCCCC;
+right:0;
+top:0;
+width:39px;
+position:fixed;
+height:100%;
+z-index:999999;
+}
+#props li, #admin_nav li {
+	padding:5px 5px 11px;
+	width:30px;
+	height:25px;
+	margin:5px 7px 0 0;
+	float:left;
+}
+#props li.sel,#admin_nav li.sel {
+	background-color:#FFFFFF;
+	border-top:1px solid #CCCCCC;
+	border-bottom:1px solid #CCCCCC;
+}
+	#props li a:link, #props li a:visited, #admin_nav li a:link, #admin_nav li a:visited {
+		font:normal .8em/2.5em 'Helvetica Neue',Helvetica,Arial,Verdana,sans-serif;
+		font-weight:300;
+		* font-weight:bold;
+		letter-spacing:1px;
+		color:#080000;
+		width:30px;
+		height:30px;
+		letter-spacing:1px;
+		line-height:1em;
+		position:absolute;
+		text-decoration:none;
+		text-indent:-9009px;
+	}
+	#props li a:hover, #props li a:focus, #props li a:active, #props li.current a:link, #props li.current a:visited, #props li.current a:hover,#props li.current a:focus,#props li.current a:active,
+	#admin_nav li a:hover, #admin_nav li a:focus, #admin_nav li a:active, #admin_nav li.current a:link, #admin_nav li.current a:visited, #admin_nav li.current a:hover,#admin_nav li.current a:focus,#admin_nav li.current a:active {
+		color:#080000;
+		text-decoration:none;
+		border:#cccccc 1px solid;
+	}
+#props_box, #add_box, #settings_box {
+	display:none;
+	margin:17px 19px 20px 20px;
+	width:365px;
+}
+.edits {
+display:none;
+}
+.edits div.box {
+width:650px;
+margin:12px 20px 5px;
+}
+.edits div.box label {
+clear: both;
+color:#080000;
+}
+
+.edits div.box textarea.limit,.edits div.box input.date,.edits div.box input.daterange,.edits div.box input.end,.edits div.box input.text, .edits div.box textarea.textarea, .edits div.box select.select {
+padding:2px;
+color:#080000;
+width:97%;
+}
+.edits div.box input.multiple {
+	padding-right: 25px;
+}
+.edits div.box select.select {
+padding:1px;
+}
+
+.edits div.box input.date,.edits div.box input.daterange,.edits div.box input.end {
+width:98px;
+}
+
+.create, .save, .delete, .close, .clear {
+font:normal 1.2em/1em 'Helvetica Neue',Helvetica,Arial,Verdana,sans-serif;
+width:auto;
+height:auto;
+margin:2px 5px 0 0;
+background-color:#F4F4F4;
+border:1px solid #171717;
+color:#171717;
+text-transform:capitalize;
+}
+.create, .delete, .clear {
+float:right;
+margin-right:0;
+}
+.save, .close, .delete {
+float:right;
+margin-bottom:10px;
+margin-right:15px;
+}
+.delete {
+clear:left;
+}
+.delete:hover, .close:hover, .clear:hover {
+background-color:#CC0000;
+color:#FFFFFF;
+}
+.create:hover, .save:hover {
+background-color:#91A023;
+color:#FFFFFF;
+}
+.tdate {
+height:50px;
+width:100%;
+}
+.tdate .bx {
+float:left;
+}
+
+.imglist img {
+border:1px solid #E6E6E6;
+height:100px;
+margin:0;
+padding:2px;
+width:100px;
+}
+.imglist img:hover, .imglist img.active {
+border:1px solid #080000;
+}
+.imglist {
+list-style-type:none;
+margin:0;
+padding:0;
+}
+.imglist li {
+float:left;
+font-size:4em;
+height:100px;
+margin:0px 15px 15px 0;
+text-align:center;
+width:100px;
+}
+
+.imgbox {
+width:100%;
+height:115px;
+}
+
+/*.ui-state-highlight { height: 1.5em; line-height: 2.6em; }
+.query div.overlay {border:1px solid red;}*/
+
+/**
+ * jQuery lightBox plugin
+ * This jQuery plugin was inspired and based on Lightbox 2 by Lokesh Dhakar (http://www.huddletogether.com/projects/lightbox2/)
+ * and adapted to me for use like a plugin from jQuery.
+ * @name jquery-lightbox-0.4.css
+ * @author Leandro Vieira Pinho - http://leandrovieira.com
+ * @version 0.4
+ * @date November 17, 2007
+ * @category jQuery plugin
+ * @copyright (c) 2007 Leandro Vieira Pinho (leandrovieira.com)
+ * @license CC Attribution-No Derivative Works 2.5 Brazil - http://creativecommons.org/licenses/by-nd/2.5/br/deed.en_US
+ * @example Visit http://leandrovieira.com/projects/jquery/lightbox/ for more informations about this jQuery plugin
+ */
+#jquery-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99990;
+	width: 100%;
+	height: 500px;
+}
+#jquery-lightbox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99991;
+	text-align: center;
+	line-height: 0;
+}
+#jquery-lightbox a img { border: none; }
+#lightbox-container-image-box {
+	position: relative;
+	background-color: #fff;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+    border: 3px solid #080000;
+    border-bottom: none;
+}
+#lightbox-container-image { padding: 10px; }
+#lightbox-loading {
+	position: absolute;
+	top: 40%;
+	left: 0%;
+	height: 25%;
+	width: 100%;
+	text-align: center;
+	line-height: 0;
+}
+#lightbox-nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+}
+#lightbox-container-image-box > #lightbox-nav { left: 0; }
+#lightbox-nav a { outline: none;}
+#lightbox-nav-btnPrev, #lightbox-nav-btnNext {
+	width: 49%;
+	height: 100%;
+	zoom: 1;
+	display: block;
+}
+#lightbox-nav-btnPrev { 
+	left: 0; 
+	float: left;
+}
+#lightbox-nav-btnNext { 
+	right: 0; 
+	float: right;
+}
+#lightbox-container-image-data-box {
+	background-color: #fff;
+	margin: 0 auto;
+	line-height: 1.4em;
+	overflow: auto;
+	width: 100%;
+	padding: 0 10px 0; border: 3px solid #080000;border-top: none;
+}
+#lightbox-container-image-data {
+	padding: 0 10px; 
+	color: #666; 
+}
+#lightbox-container-image-data #lightbox-image-details { 
+	width: 80%; 
+	float: left; 
+	text-align: left;
+}	
+#lightbox-image-details-caption { font-weight: bold; }
+#lightbox-image-details-currentNumber {
+	display: block; 
+	clear: left; 
+	padding-bottom: 1.0em;
+}			
+#lightbox-secNav-btnClose {
+	width: 66px; 
+	float: right;
+	padding-bottom: 0.7em;	
+}
+
+#blanket {
+background-color:#1B1B1B;
+width:100%;
+height:100%;
+top:0;
+left:0;
+overflow:hidden;
+position:absolute;
+z-index:79;
+display:none;
+opacity:.8;
+}
+#window {
+position:absolute;
+width:100%;
+top:55px;
+left:0;
+z-index:80;
+text-align:center;
+height:717px;
+display:none;
+}
+#form_join {
+display:none;
+width:460px;
+margin:0 auto;
+overflow:hidden;
+background:#F2F2F2;
+border:1px solid #000000;
+line-height:1.8em;
+padding:25px 30px 30px;
+}
+#form_join label {
+color:#666666;
+display:block;
+float:left;
+font:1.2em/1em 'Helvetica Neue',Helvetica,Arial,Verdana,sans-serif;
+margin:3px 9px 0 22px;
+text-align:right;
+text-transform:capitalize;
+width:98px;
+}
+#form_join input {
+float:right;
+margin:0 6px;
+border:1px solid #D7D7D7;
+width:300px;
+* width:280px;
+height:20px;
+}
+#form_join textarea {
+float:right;
+margin:0 6px;
+border:1px solid #D7D7D7;
+width:300px;
+* width:280px;
+}
+#form_join input.error, #form_join textarea.error {
+border:1px solid #CC0000;
+}
+#form_join p.right {
+color:#CC0000;
+display:block;
+font:1.1em/1em 'Helvetica Neue',Helvetica,Arial,Verdana,sans-serif;
+height:15px;
+margin:0;
+padding:10px 10px 15px 37px;
+text-align:right;
+width:513px;
+}
+#form_join p.right label.error {
+color:#CC0000;
+float:right;
+font:1.1em/1em 'Helvetica Neue',Helvetica,Arial,Verdana,sans-serif;
+margin:0;
+text-align:right;
+text-transform:none;
+width:100%;
+}
+#form_join input.submit {
+background:url("/img/btn_submit.gif") no-repeat scroll 0 0 #FFFFFF;
+height:22px;
+width:99px;
+}
+#form_join input.cancel {
+background:url("/img/btn_cancel.gif") no-repeat scroll 0 0 #FFFFFF;
+height:22px;
+width:99px;
+}
+#form_join input.submit, #form_join input.cancel {
+border:medium none;
+cursor:pointer;
+margin:0 6px;
+text-indent:-9009px;
+}

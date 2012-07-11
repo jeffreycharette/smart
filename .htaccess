@@ -1,0 +1,20 @@
+rewriteEngine on
+
+# Require top level sub-domain
+RewriteCond %{HTTP_HOST} !^smart\.wearecharette\.com$ [NC]
+RewriteRule ^(.*)$ http://smart.wearecharette.com/$1 [R=301,L]
+
+# Remove query strings from URL
+RewriteCond %{THE_REQUEST} ^GET\ /.*\;.*\ HTTP/
+RewriteCond %{QUERY_STRING} !^$
+RewriteRule .* http://smart.wearecharette.com%{REQUEST_URI}? [R=301,L]
+
+# Send all HTML requests to index php file
+RewriteRule ^(.+)\.html$  /index.php?file=$1\.html [L,NC,QSA]
+RewriteRule ^(.+)\.json$  /index.php?file=$1\.json [L,NC,QSA]
+
+AddType font/ttf .ttf
+AddType font/eot .eot
+AddType font/otf .otf
+AddType application/x-font-woff .woff
+AddType image/vnd.microsoft.icon .cur .ico

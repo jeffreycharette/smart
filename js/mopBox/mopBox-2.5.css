@@ -1,0 +1,251 @@
+@charset "UTF-8";
+/*
+ * mopBox 2.5.0
+ * By Hiroki Miura (http://www.mopstudio.jp)
+ * Copyright (c) 2008 mopStudio
+ * Licensed under the MIT License: http://www.opensource.org/licenses/mit-license.php
+ * Nobember 19, 2009
+*/
+#mpBox {
+left:0;
+position:fixed;
+top:50px;
+width:100%;
+}
+#mpBx {
+	z-index: 9000;
+	position: relative;
+	background-repeat: no-repeat;
+	display: none;
+	margin:0 auto;
+}
+#mpBx .case {
+	position: absolute;
+	overflow-x: hidden;
+	margin: 20px 0 0 20px;
+	background-color:#FFFFFF;
+	border:2px solid #080000;
+}
+#mpBx .holder {
+	position: absolute;
+	left: 0px;
+}
+#mpBx .cover {
+	position: absolute;
+}
+#mpBx .slider {
+	position: absolute;
+	height: 34px;
+	display: none;
+}
+#mpBx .sldLeft {
+	position: absolute;
+	height: 34px;
+	width:20px;
+	background-image:url(sldBckLt.png);
+	background-repeat:no-repeat;
+}
+#mpBx .sldCenter {
+	position: absolute;
+	height: 34px;
+	width:20px;
+	background-image: url(sldBck.png);
+	background-repeat:repeat-x;
+}
+#mpBx .sldRight {
+	position: absolute;
+	height: 34px;
+	width:20px;
+	background-image:url(sldBckRt.png);
+	background-repeat:no-repeat;
+}
+#mpBx .sliderBtn {
+	position: absolute;
+	left: 0px;
+	height: 34px;
+	cursor: default;
+}
+#mpBx .sldBtnLeft {
+	position: absolute;
+	height: 34px;
+	width:20px;
+	background-image:url(sldBtnLt.png);
+	background-repeat:no-repeat;
+}
+#mpBx .sldBtnCenter {
+	position: absolute;
+	height: 34px;
+	width:20px;
+	background-image:url(sldBtn.png);
+	background-repeat:repeat-x;
+}
+#mpBx .pageNumber {
+	padding-top:9px;
+	font-size: 10px;
+	font-weight: bold;
+	color: #080000;
+	text-align:center;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0 8px;
+}
+#mpBx .sldBtnRight {
+	height:26px;
+	position:absolute;
+	right:15px;
+	top:-13px;
+	width:94px;
+	cursor: pointer;
+	background-image:url(addnew.png);
+	background-repeat:no-repeat;
+}
+#mpBx .blankRight {
+	position: absolute;
+	height: 34px;
+	width:20px;
+	background-image:url(sldBtnRt.png);
+	background-repeat:no-repeat;
+	right:0;
+}
+#mpBx .bwd {
+	position: absolute;
+	height: 101px;
+	width: 51px;
+	cursor:pointer;
+	background-image: url(sldLtB.png);
+	background-repeat: no-repeat;
+	cursor: pointer;
+	display: none;
+}
+#mpBx .fwd {
+	position: absolute;
+	height: 101px;
+	width: 51px;
+	cursor:pointer;
+	background-image: url(sldRtB.png);
+	background-repeat: no-repeat;
+	cursor: pointer;
+	display: none;
+}
+
+#mpBx .closeBtn {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	height: 26px;
+	width: 26px;
+	background-image:url(sldCls.png);
+	background-repeat: no-repeat;
+	cursor:pointer;
+	display: none;
+}
+#mpBx .closeBtn:hover {
+	background-image:url(sldClsF.png);
+	background-repeat: no-repeat;
+}
+#mpBx .s-topLeft {
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	left: 0px;
+	top: 0px;
+	background-image: url(tpLt.png);
+	background-repeat: no-repeat;
+	display: none;
+}
+#mpBx .s-top {
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	left: 20px;
+	top: 0px;
+	background-image: url(tp.png);
+	background-repeat: repeat-x;
+	display: none;
+}
+#mpBx .s-left {
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	left: 0px;
+	top: 20px;
+	background-image: url(lt.png);
+	background-repeat: repeat-y;
+	display: none;
+}
+#mpBx .s-topRight {
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	right: 0px;
+	top: 0px;
+	background-image: url(tpRt.png);
+	background-repeat: no-repeat;
+	display: none;
+}
+#mpBx .s-right {
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	right: 0px;
+	top: 20px;
+	background-image: url(rt.png);
+	background-repeat: repeat-y;
+	display: none;
+}
+#mpBx .s-bottomLeft {
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	left: 0px;
+	bottom: 0px;
+	background-image: url(ltBtm.png);
+	background-repeat: no-repeat;
+	display: none;
+}
+#mpBx .s-bottom {
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	left: 20px;
+	top: 0px;
+	background-image: url(btm.png);
+	background-repeat: repeat-x;
+	display: none;
+}
+#mpBx .s-bottomRight {
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	right: 0px;
+	bottom: 0px;
+	background-image: url(rtBtm.png);
+	background-repeat: no-repeat;
+	display: none;
+}
+.hidden {
+	display: none;
+}
+
+
+.ui-resizable { position: relative;}
+.ui-resizable-handle { position: absolute;font-size: 0.1px;z-index: 99999; display: block;}
+.ui-resizable-disabled .ui-resizable-handle, .ui-resizable-autohide .ui-resizable-handle { display: none; }
+.ui-resizable-s { cursor: s-resize; height: 7px; width: 100%; bottom: -5px; left: 0px; }
+.ui-resizable-e { cursor: e-resize; width: 7px; right: -5px; top: 0px; height: 100%; }
+.ui-resizable-se { cursor: se-resize; width: 12px; height: 12px; right: 1px; bottom: 1px; }
+
+.ui-resizable-n { display: none;}
+.ui-resizable-w { display: none; }
+.ui-resizable-sw { display: none; }
+.ui-resizable-nw { display: none; }
+.ui-resizable-ne { display: none;}
+
+/*
+.ui-resizable-n { cursor: n-resize; height: 7px; width: 100%; top: -5px; left: 0px; }
+.ui-resizable-e { cursor: e-resize; width: 7px; right: -5px; top: 0px; height: 100%; }
+.ui-resizable-w { cursor: w-resize; width: 7px; left: -5px; top: 0px; height: 100%; }
+.ui-resizable-se { cursor: se-resize; width: 12px; height: 12px; right: 1px; bottom: 1px; }
+.ui-resizable-sw { cursor: sw-resize; width: 9px; height: 9px; left: -5px; bottom: -5px; }
+.ui-resizable-nw { cursor: nw-resize; width: 9px; height: 9px; left: -5px; top: -5px; }
+.ui-resizable-ne { cursor: ne-resize; width: 9px; height: 9px; right: -5px; top: -5px;}
+*/
