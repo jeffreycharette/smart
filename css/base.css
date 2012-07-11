@@ -874,7 +874,7 @@ article.small h2,
 #grid .xlarge {
 	width: 648px;
 }
-#grid h2, .lined h2, .lined-top h2 {
+#grid h2, .lined h2, .lined-top h2, #related-list h2, #thinking-detail h2 {
 	color:#333333;
 	font-size: 1em;
 	font-weight: bold;
@@ -882,6 +882,10 @@ article.small h2,
 	padding: 3px 0 10px;
 	text-shadow: none;
 	text-transform: uppercase;
+}
+#related-list h2, #thinking-detail h2 {
+	margin-bottom: 17px;
+	padding: 0;
 }
 #grid h2 {
 	font-size: 1.3em;
@@ -1385,13 +1389,6 @@ padding:24px;
 	padding-right: 20px;
 	position: relative;
 	width: 147px;
-}
-#related-list h2, #thinking-detail h2 {
-font-size: 1.2em;
-font-weight: normal;
-margin-bottom: 17px;
-text-shadow: none;
-text-transform: uppercase;
 }
 #related-list article h2, #thinking-detail article h2 {
 	color: #333333;
