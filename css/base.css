@@ -1850,11 +1850,26 @@ article.news iframe.video {
 /*About: Leadership: 2nd-level */
 
 /* case-study-slideshow */
+#case-study-wrapper {
+	clear: both;
+	overflow: auto;
+	padding: 39px 0;
+}
+#case-study-wrapper img {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
 .case-study-slideshow {
 	clear: both;
 	height:481px;
 	overflow:hidden;
 	width:481px;
+}
+.slide-number {
+	color: #666666;
+	font-size: .8125em;
+	padding-right: 10px;
 }
 
 /* footer */
