@@ -1859,10 +1859,12 @@ article.news iframe.video {
 	-moz-box-shadow: none;
 	-webkit-box-shadow: none;
 	box-shadow: none;
+	margin: 0;
 }
 .case-study-slideshow {
 	clear: both;
 	height:481px;
+	margin-bottom: 10px;
 	overflow:hidden;
 	width:481px;
 }
