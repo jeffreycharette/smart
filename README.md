@@ -1,4 +1,4 @@
 Smart Design
 =====
 
-Staging environment
+Staging Environment
