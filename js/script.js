@@ -137,7 +137,7 @@ $('input#search').jsonSuggest({
 		next: '#ssnext',
 		timeout:0,
 		after: function(curr,next,opt) { 
-			var slideNum = (opt.currSlide + 1) + '/' + opt.slideCount; 
+			var slideNum = (opt.currSlide + 1) + ' of ' + opt.slideCount; 
 			$('#slide-number').html(slideNum); 
 			$('#ssprev').css({"visibility" : [opt.currSlide == 0 ? 'hidden' : 'visible']});
 			$('#ssnext').css({"visibility" : [opt.currSlide == opt.slideCount - 1 ? 'hidden' : 'visible']});
