@@ -1851,14 +1851,10 @@ article.news iframe.video {
 
 /* case-study-slideshow */
 .case-study-slideshow {
-	width:648px;
-	height:430px;
+	clear: both;
+	height:481px;
 	overflow:hidden;
-}
-.case-study-slideshow img {  
-    width:  648px; 
-    height: 430px;
-    color: blue; 
+	width:481px;
 }
 
 /* footer */
