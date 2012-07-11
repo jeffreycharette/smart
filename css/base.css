@@ -1698,26 +1698,168 @@ article.news iframe.video {
 }
 
 .section-column {
-	width:314px;
+	width:295px;
 	float: left;
 	margin-bottom: 0px;
 	margin-top: 20px;
 	margin-right:19px;
 }
+
 .section-column-right {
 	width:314px;
 	float: right;
 	margin-right: 19px;
 }
+
+.section-column {
+	width:314px;
+	float:right;
+}
+
+
 .section-column-right h3{
 	padding-bottom: 5px;
 }
+
+.look-ahead {
+	padding-bottom: 19px;
+}
+
 .section-column h3 {
 	padding-bottom: 5px;
 }
+
 #section-top {
 	height: 150px;
 	margin-bottom:100px;
+}
+
+#section-nav li {
+	margin-left:19px;
+}
+
+#section-nav li p {
+	text-align: center;
+}
+
+.four-column {
+	float: left;
+	width: 648px;
+}
+
+.four-column h3{
+	float: left;
+	width: 648px;
+	padding-bottom:5px;
+}
+
+.caption {
+	font-family: 'Helvetica Neue', 'HelveticaNeue', Arial, Helvetica, sans-serif;
+	font-size: .9375em;
+	font-weight: bold;
+}
+
+.product-right {
+	
+}
+
+.products {
+	clear:both;
+	font-size: .9375em;
+	padding-top:100px;
+	padding-bottom:100px;
+}
+
+.products li.last-item{
+	margin-right:0px;
+	
+}
+
+.products li {
+	float:left;
+	margin-right:13px;
+	display: inline;
+	list-style: none;
+}
+
+.products li p {
+	width: 147px;
+	font-family: 'Helvetica Neue', 'HelveticaNeue', Arial, Helvetica, sans-serif;
+	font-size: .9375em;
+	font-weight: none;
+}
+
+.products li h2 {
+	font-family: 'Helvetica Neue', 'HelveticaNeue', Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: .9375em;
+	text-shadow: none;
+	
+}
+
+/*case: flip */
+
+.flip-slideshow {
+	width:481px;
+	height:481px;
+	overflow:hidden;
+	margin-right:19px;
+	float:left;
+	
+}
+
+
+/*About: Location: SF */
+
+.side-bar {
+	float: left;
+	font-size: .8125em;
+	margin: 40px 29px 0 0;
+	width: 147px;
+}
+.side-bar-right {
+	float: right;
+	font-size: .8125em;
+	margin: 40px 29px 0 0;
+	width: 314px;
+}
+.side-bar-top {
+	float: left;
+	font-size: .8125em;
+	margin: 0px 29px 0 0;
+	width: 147px;
+}
+.side-bar-section {
+	float: left;
+	font-size: .8125em;
+	margin: 40px 29px 0 0;
+	width: 147px;
+}
+.three-column {
+	width: 450px;
+	float:left;
+}
+
+#getting-here {
+	width:314px;
+}
+#getting-here img{
+	margin: 19px;
+}
+
+/*About: Leadership: 2nd-level */
+
+
+/* case-study-slideshow */
+.case-study-slideshow {
+	width:648px;
+	height:430px;
+	overflow:hidden;
+}
+.case-study-slideshow img {  
+    width:  648px; 
+    height: 430px;
+    color: blue; 
 }
 
 /* footer */
