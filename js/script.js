@@ -127,6 +127,23 @@ $('input#search').jsonSuggest({
 		}
 	});
 	
+/* case-study-slideshow */
+	
+	$('.case-study-slideshow').cycle({
+		fx: 'scrollHorz',
+		nowrap: 1,
+		speed: 300,
+		prev: '#ssprev',
+		next: '#ssnext',
+		timeout:0,
+		after: function(curr,next,opt) { 
+			var slideNum = (opt.currSlide + 1) + '/' + opt.slideCount; 
+			$('#slide-number').html(slideNum); 
+			$('#ssprev').css({"visibility" : [opt.currSlide == 0 ? 'hidden' : 'visible']});
+			$('#ssnext').css({"visibility" : [opt.currSlide == opt.slideCount - 1 ? 'hidden' : 'visible']});
+		}
+	});
+	
 /* Twitter Feed */
 
 $(".tweet").tweet({
