@@ -1720,9 +1720,10 @@ article.news iframe.video {
 .section-column-right h3{
 	padding-bottom: 5px;
 }
-
-.look-ahead {
+h2.look-ahead {
 	font-size: 2.5em;
+}
+.look-ahead {
 	padding-bottom: 19px;
 }
 
