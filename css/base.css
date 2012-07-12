@@ -1698,7 +1698,7 @@ article.news iframe.video {
 }
 
 .section-column {
-	width:295px;
+	width:314px;
 	float: left;
 	margin-bottom: 0px;
 	margin-top: 20px;
@@ -1710,12 +1710,6 @@ article.news iframe.video {
 	float: right;
 	margin-right: 19px;
 }
-
-.section-column {
-	width:314px;
-	float:right;
-}
-
 
 .section-column-right h3{
 	padding-bottom: 5px;
