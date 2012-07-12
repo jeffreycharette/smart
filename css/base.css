@@ -890,6 +890,9 @@ article.small h2,
 #grid h2, h2.allcaps {
 	font-size: 1.3em;
 }
+h2.allcaps {
+font-family: 'Helvetica Neue', 'HelveticaNeue', Arial, Helvetica, sans-serif;
+}
 #grid .small h2 {
 	color:#333333;
 	font-family: 'HelveticaNeue', 'Helvetica Neue', Arial, Helvetica, sans-serif;
