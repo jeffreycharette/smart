@@ -874,7 +874,7 @@ article.small h2,
 #grid .xlarge {
 	width: 648px;
 }
-#grid h2, .lined h2, .lined-top h2, #related-list h2, #thinking-detail h2 {
+#grid h2, .lined h2, .lined-top h2, #related-list h2, #thinking-detail h2, h2.allcaps {
 	color:#333333;
 	font-size: 1em;
 	font-weight: bold;
@@ -887,7 +887,7 @@ article.small h2,
 	margin-bottom: 17px;
 	padding: 0;
 }
-#grid h2 {
+#grid h2, h2.allcaps {
 	font-size: 1.3em;
 }
 #grid .small h2 {
@@ -1707,7 +1707,7 @@ article.news iframe.video {
 
 .grid-one {
 	float:right;
-	margin-right: 19px;
+	margin-left: 19px;
 	width: 147px;
 }
 
