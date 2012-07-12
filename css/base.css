@@ -1222,7 +1222,7 @@ ul.comments {
 	padding-bottom: 16px;
 }
 #blogs article img {
-	float: left;
+	float: right;
 	margin: 3px 15px 3px 3px;
 }
 #blogs a:link,
