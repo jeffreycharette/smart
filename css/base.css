@@ -1705,6 +1705,12 @@ article.news iframe.video {
 	margin-right:19px;
 }
 
+.grid-one {
+	float:right;
+	margin-top: 20px;
+	width: 147px;
+}
+
 .section-column-right {
 	width:314px;
 	float: right;
