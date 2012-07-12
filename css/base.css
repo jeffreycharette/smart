@@ -1769,6 +1769,7 @@ h2.look-ahead {
 .products {
 	clear:both;
 	font-size: .9375em;
+	overflow: hidden;
 	padding-top:100px;
 	padding-bottom:100px;
 }
