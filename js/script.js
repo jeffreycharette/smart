@@ -195,6 +195,9 @@ $(".tweet").tweet({
 	$(document).keyup(function(e) {
 	  if (e.keyCode == 27) { $('.modal-close a').trigger('click'); }   // esc
 	});
+	
+	/* search results */
+	$('#search-results ol li:odd').addClass('odd');
 
 /* activate first matched modal from hash */
 
