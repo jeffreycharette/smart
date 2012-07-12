@@ -1877,6 +1877,9 @@ h2.look-ahead {
 }
 
 /* Search results */
+#search-results {
+	margin-top: 19px;
+}
 
 #search-results li {
 	display: inline;
