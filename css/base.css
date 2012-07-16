@@ -754,7 +754,7 @@ ul.industries {
 #one-column {
 	clear: both;
 	margin: 0 auto;
-	overflow: hidden;
+	overflow: auto;
 	width: 985px;
 }
 #one-column-wide {
