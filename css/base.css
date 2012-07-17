@@ -409,7 +409,8 @@ ul.subnav {
 }
 .subnav li a:link,
 .subnav li a:visited,
-.subnav li a:active {
+.subnav li a:active,
+#load-more {
 	background: none;
 	color: #666666;
 	font-family: 'HelveticaNeue-CondensedBold', 'Helvetica Neue', Arial, Helvetica, sans-serif;
@@ -425,9 +426,16 @@ ul.subnav {
 .subnav li a:visited.active,
 .subnav li a:active.active,
 .subnav li a:hover.active,
-.subnav li a:focus.active {
+.subnav li a:focus.active,
+#load-more {
 	background: #87CCE6 url('images/bg-subnav.gif') repeat-x 0 0;
 	color: #333333;
+}
+
+#load-more {
+display: inline;
+padding-bottom: 10px;
+padding-top: 10px;
 }
 
 /* tabs navigation */
