@@ -33,8 +33,9 @@ $(function() {
 	});
 
 /* Work Layout */
-	var workCount = 3,
-			loadCount = workCount;
+	var workCount = 5,
+			loadCount = workCount,
+			workLength = $('#work article').length;
 			
 	// Add class to show first workCount elements
 	$('#work article:lt('+workCount+')').addClass('show');
@@ -70,6 +71,9 @@ $(function() {
 				}
 			}
 		});
+		if (loadCount == workLength) {
+			$('#load-more').hide();
+		}
 	});
 
 /* Custom Select */
