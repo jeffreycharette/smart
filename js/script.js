@@ -33,22 +33,54 @@ $(function() {
 	});
 
 /* Work Layout */
+	var workCount = 3,
+			loadCount = workCount;
+			
+	// Add class to show first workCount elements
+	$('#work article:lt('+workCount+')').addClass('show');
+
 	$('#work').isotope({
 	  itemSelector : 'article',
-		itemPositionDataEnabled: true
+		itemPositionDataEnabled: true,
+		filter : $('#work article.show')
 	})
 	// log position of each item
 	.find('.medium').each(function(){
 	  var position = $(this).data('isotope-item-position');
-		if (position.x == 0) {
-			$(this).css({'margin-left' : 0});
+		if (position) {
+			if (position.x == 0) {
+				$(this).css({'margin-left' : 0});
+			}
 		}
+	});
+	
+	$('#load-more').click( function() {
+		loadCount = loadCount + workCount;
+		
+		// add class to show more elements
+		$('#work article:lt('+loadCount+')').addClass('show');
+		
+		// filter with isotope
+		$('#work').isotope({ filter : $('#work article.show') })
+		.find('.medium').each(function(){
+		  var position = $(this).data('isotope-item-position');
+			if (position) {
+				if (position.x == 0) {
+					$(this).css({'margin-left' : 0});
+				}
+			}
+		});
 	});
 
 /* Custom Select */
 $('#industry, #select-contributors, #select-filter, #select-archive').SelectCustomizer();
 
 $("#industry_customselect").bind('filtered',function(e, value) {
+	// no longer hiding content that needs to be loaded
+	$('#load-more').hide();
+	// clear search
+	$('#search').val('');
+	
 	var value = '.'+value.replace(/ /g, '-');
 	if (value == '.all-expertise') { value = '*';}
 	
@@ -64,6 +96,7 @@ $("#industry_customselect").bind('filtered',function(e, value) {
 			$(this).css({ 'margin-right':'14px' });
 		}
 	}).css({ 'margin-left':'0', 'margin-bottom':'30px', 'height':'438px', 'width':'309px' });
+	
 	$('#work').isotope({ filter: value });
 });
 
@@ -80,6 +113,13 @@ $('input#search').jsonSuggest({
 	data: data.items, 
 	minCharacters: 1,
 	onSelect: function(value) {
+		// no longer hiding content that needs to be loaded
+		$('#load-more').hide();
+		
+		// clear select
+		$('#industry_iconselect span').text('Filter by Expertise');
+		$('#industry_options div').removeClass('selectedclass');
+		
 		var value = '.'+value.text.replace(/ /g, '-').toLowerCase();
 		if (value == '.all-expertise') { value = '*';}
 
@@ -168,7 +208,7 @@ $(".tweet").tweet({
 	        });
 	});
 	
-/* modal */
+/* slider */
 
 	$("a.slider").each( function(i) {
 		var color = $(this).find('img:first').attr('class');
@@ -190,20 +230,22 @@ $(".tweet").tweet({
 	
 	/* localScroll (capabilites page / all inline links) */
 	$.localScroll.hash();
-	$.localScroll({hash:true})
-	
-	$(document).keyup(function(e) {
-	  if (e.keyCode == 27) { $('.modal-close a').trigger('click'); }   // esc
-	});
+	$.localScroll({hash:true});
 	
 	/* search results */
 	$('#search-results ol li:odd').addClass('odd');
+	
+	/* modal code not used */
+	
+	/*$(document).keyup(function(e) {
+	  if (e.keyCode == 27) { $('.modal-close a').trigger('click'); }   // esc
+	});*/
 
 /* activate first matched modal from hash */
 
-	if (window.location.hash) {
+	/*if (window.location.hash) {
 		var hash = window.location.hash.substring(1);
 		$('a[href*=#'+hash+']:first').trigger('click');
-	}
+	}*/
 	
 });
