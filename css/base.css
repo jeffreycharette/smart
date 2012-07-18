@@ -511,6 +511,10 @@ ul.industries {
 	color: #FF6A11;
 }
 
+.industries li:nth-child(6n) {
+	padding-right: 0;
+}
+
 /* feature section */
 
 #feature .pullquote {
