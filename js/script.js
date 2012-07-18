@@ -31,6 +31,7 @@ $(function() {
 			$(this).css({ 'margin-right':'20px' });
 		}
 	});
+	$('.industries li:nth-child(6)').css({ 'padding-right':0 });
 
 /* Work Layout */
 	var workCount = 5,
