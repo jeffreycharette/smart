@@ -569,6 +569,10 @@ margin:12px 20px 5px;
 .edits div.box label {
 clear: both;
 color:#080000;
+margin-top: 10px;
+}
+.edits .limit_info {
+	margin-top: 3px;
 }
 
 .edits div.box textarea.limit,.edits div.box input.date,.edits div.box input.daterange,.edits div.box input.end,.edits div.box input.text, .edits div.box textarea.textarea, .edits div.box select.select {
