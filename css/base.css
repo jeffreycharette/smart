@@ -1913,6 +1913,23 @@ h2.look-ahead {
 	margin-right: 19px;
 }
 
+/*hover-fader*/
+
+.hover-fader {
+	width:147px;
+	height:147px;
+	float:left;
+	margin-left:19px;
+	margin-bottom:19px;
+}
+
+.hover-under {
+	position:absolute;
+}
+.hover-over {
+	position:absolute;
+	z-index:2;
+}
 
 /* footer */
 
