@@ -975,6 +975,39 @@ h3.section-headline {
 
 /* working here */
 
+/* working here */
+
+section#working-here {
+	margin-top:65px;margin-bottom:65px;
+}
+#working-here h3 {
+	float:none;
+}
+#working-here hgroup, #working-here hgroup h2, #working-here hgroup h3 {
+	color: #333;
+	line-height: 1em;
+	text-shadow: none;
+	text-transform: uppercase;
+	font-family: 'Helvetica Neue Condensed bold', 'HelveticaNeue-CondensedBold', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	letter-spacing: 0;
+	font-size:20px;
+}
+#working-here hgroup h2 {
+	margin-bottom:10px;
+}
+#working-here hgroup h3 {
+	margin-bottom:19px;
+}
+#working-here p {
+	margin-bottom:19px;
+}
+#working-here ul {
+	margin:10px;
+}
+#working-here ul li {
+	margin-bottom:10px;
+	text-indent:-10px;
+}
 #grid-working-here {
 	clear: both;
 	margin-bottom: 19px;
@@ -1001,7 +1034,18 @@ aside.grey {
 	float: right;
 	padding: 12px 12px 0 12px;
 	margin-right: 2px;
-	width: 294px;
+	width: 290px;
+}
+aside.grey p {
+	padding:0;
+	margin-bottom:19px;
+}
+aside.grey ul {
+	margin: 19px 39px 19px 19px;	
+}
+aside.grey ul li {
+	margin-bottom: 19px;
+	text-indent: -10px;
 }
 aside.grey h4 {
 	border-bottom: 1px #666666 solid;
