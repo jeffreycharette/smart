@@ -1552,6 +1552,9 @@ hgroup.yellow-wrapper-small::after {
 #industry-detail h2, #industry-detail p {
 	padding-bottom: 19px;
 }
+#industry-detail img:first-child {
+	margin-bottom: 19px;
+}
 .indent {
 	float: right;
 	padding-bottom: 19px;
