@@ -245,6 +245,18 @@ $(".tweet").tweet({
 	/* search results */
 	$('#search-results ol li:odd').addClass('odd');
 	
+	/* leadership */
+	
+	$('.hover-over').mouseenter(
+		function(){
+			$(this).stop().animate({opacity:.0001});
+		});
+		
+	$('.hover-over').mouseleave(
+		function(){
+			$(this).stop().animate({opacity:1});	
+	});
+	
 	/* modal code not used */
 	
 	/*$(document).keyup(function(e) {
