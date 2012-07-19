@@ -213,8 +213,8 @@ else {
 						if (stristr($editortpl_new,"{".$model['name']."}")) {
 							$editortpl_new=str_replace("{".$model['name']."}",$model['value']."{".$model['name']."}",$editortpl_new);
 						}
-						elseif (strlen($model['name']) > 1 && $model['type'] != "tpl") {
-							$editortpl_new=$editortpl_new.$model['value']."{".$model['name']."}";
+						elseif (strlen($model['name']) > 1 && $model['type'] != "tpl" && $model['type'] != "content") {
+							$editortpl_new=$editortpl_new.$model['value']."{".$model['name']."}".$model['type'];
 						}
 					}
 					$newform="<div class=\"box\"><form name=\"entities\" method=\"post\" action=\"edit.html?id=".$cid."\"><h2 style=\"color:#000000;float:left;\">Add New</h2><input style=\"float:right\" value=\"Publish\" class=\"save\" type=\"submit\" /><br /><br /><hr /><input id=\"type\" type=\"hidden\" value=\"".$type."\" name=\"type\" /><input id=\"etpl\" type=\"hidden\" value=\"".$model['tpl']."\" name=\"etpl\" /><input id=\"create_check\" type=\"hidden\" value=\"1\" name=\"create_check\" />\n".$newform;
