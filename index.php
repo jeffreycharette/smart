@@ -163,7 +163,7 @@ else {
 				$sql="SELECT collections.type as ctype, entities.id,entities.name,entities.value,entities.type FROM collections,cid_eid,entities WHERE collections.type='model' AND collections.name='".$type."' AND cid_eid.cid=collections.id AND cid_eid.eid=entities.id AND collections.active='y' GROUP BY entities.name ORDER BY entities.name,entities.id";
 				$result=$read_db->query($sql);
 				if ($read_db->numRows($result) > 0) {
-					$editortpl_new="{name}{first}{last}{title}{sub title}{type}{order}{category}{color}{frequency}{cost}{email}<div class=\"tdate\">{start}{end}{occurs}</div>{location}{instructor}{summary image}{summary title}{summary}{summary link}{content}{case study}{info}{size}{price}{article}{news text}{news link}{text}{link name}{link}{text 1}{link 1}{text 2}{link 2}{text 3}{link 3}{text 4}{link 4}{signup link}{quote}{home caption}{caption}{thumb}{images}{main link text}{main link}{slideshow}{left slideshow}{left slideshow link text}{left slideshow link}{right slideshow}{right slideshow link text}{right slideshow link}".$edtr;
+					$editortpl_new="{name}{first}{last}{title}{sub title}{type}{order}{category}{color}{frequency}{cost}{email}<div class=\"tdate\">{start}{end}{occurs}</div>{location}{instructor}{summary image}{summary title}{summary}{summary link}{content}{case study}{info}{size}{price}{article}{article image}{news text}{news link}{text}{link name}{link}{text 1}{link 1}{text 2}{link 2}{text 3}{link 3}{text 4}{link 4}{signup link}{quote}{home caption}{caption}{thumb}{images}{main link text}{main link}{slideshow}{left slideshow}{left slideshow link text}{left slideshow link}{right slideshow}{right slideshow link text}{right slideshow link}".$edtr;
 					$edtr="";
 					while ($row = $read_db->fetchArray()) {
 						$model['type']=$row['type'];
@@ -210,7 +210,12 @@ else {
 						else {
 							$model['value']=print_input($mname."_".$model['type'],$model['name'],"","","text"," id=\"text_new".$z."\" class=\"".$model['type']."\" ")."<br />";
 						}
-						$editortpl_new=str_replace("{".$model['name']."}",$model['value']."{".$model['name']."}",$editortpl_new);
+						if (stristr($editortpl_new,"{".$model['name']."}")) {
+							$editortpl_new=str_replace("{".$model['name']."}",$model['value']."{".$model['name']."}",$editortpl_new);
+						}
+						else {
+							$editortpl_new=$editortpl_new.$model['value']."{".$model['name']."}";
+						}
 					}
 					$newform="<div class=\"box\"><form name=\"entities\" method=\"post\" action=\"edit.html?id=".$cid."\"><h2 style=\"color:#000000;float:left;\">Add New</h2><input style=\"float:right\" value=\"Publish\" class=\"save\" type=\"submit\" /><br /><br /><hr /><input id=\"type\" type=\"hidden\" value=\"".$type."\" name=\"type\" /><input id=\"etpl\" type=\"hidden\" value=\"".$model['tpl']."\" name=\"etpl\" /><input id=\"create_check\" type=\"hidden\" value=\"1\" name=\"create_check\" />\n".$newform;
 					$newform.=str_replace("<div class=\"tdate\"></div>","",preg_replace("/{(.*?)}/is","",$editortpl_new));
@@ -433,7 +438,7 @@ else {
 							$row2 = $read_db->fetchArray($result2);
 							$edtr=$row2['value'];
 						}
-						$editortpl="{name}{first}{last}{title}{sub title}{type}{order}{category}{color}{frequency}{cost}{email}{date}<div class=\"tdate\">{start}{end}{occurs}{until}{dates}</div>{location}{instructor}{summary image}{summary title}{summary}{summary link}{content}{case study}{info}{size}{price}{article}{news text}{news link}{text}{link name}{link}{text 1}{link 1}{text 2}{link 2}{text 3}{link 3}{text 4}{link 4}{signup link}{quote}{home caption}{caption}{thumb}{images}{main link text}{main link}{slideshow}{left slideshow}{left slideshow link text}{left slideshow link}{right slideshow}{right slideshow link text}{right slideshow link}".$edtr;
+						$editortpl="{name}{first}{last}{title}{sub title}{type}{order}{category}{color}{frequency}{cost}{email}{date}<div class=\"tdate\">{start}{end}{occurs}{until}{dates}</div>{location}{instructor}{summary image}{summary title}{summary}{summary link}{content}{case study}{info}{size}{price}{article}{article image}{news text}{news link}{text}{link name}{link}{text 1}{link 1}{text 2}{link 2}{text 3}{link 3}{text 4}{link 4}{signup link}{quote}{home caption}{caption}{thumb}{images}{main link text}{main link}{slideshow}{left slideshow}{left slideshow link text}{left slideshow link}{right slideshow}{right slideshow link text}{right slideshow link}".$edtr;
 						$edtr="";
 
 							//$editortpl="{name}{first}{last}{title}{sub title}{type}{order}{category}{color}{frequency}{cost}{email}{date}<div class=\"tdate\">{start}{end}{occurs}{until}{dates}</div>{location}{instructor}{summary}{summary link}{content}{case study}{info}{size}{price}{article}{news text}{news link}{text}{link name}{link}{text 1}{link 1}{text 2}{link 2}{text 3}{link 3}{text 4}{link 4}{signup link}{quote}{home caption}{caption}{thumb}{images}{main link text}{main link}{slideshow}{left slideshow}{left slideshow link text}{left slideshow link}{right slideshow}{right slideshow link text}{right slideshow link}";
@@ -524,21 +529,36 @@ else {
 											$arr[$k]['tpl']=str_replace("{urlencoded_".$vv['name']."}",urlencode($vv['value']),$arr[$k]['tpl']);
 										}
 										if ($vv['type']=="textarea" || $vv['type']=="content") {
-											$editortpl=str_replace("{".$vv['name']."}",print_input($kk,$vv['name'],"",$vv['value'],"textarea"," id=\"textarea".$kk."\" style=\"width:97%;height:200px;\" rows=\"8\" class=\"textarea\" "),$editortpl);
+											if (stristr($editortpl,"{".$vv['name']."}")) {
+												$editortpl=str_replace("{".$vv['name']."}",print_input($kk,$vv['name'],"",$vv['value'],"textarea"," id=\"textarea".$kk."\" style=\"width:97%;height:200px;\" rows=\"8\" class=\"textarea\" "),$editortpl);
+											}
+											else {
+												$editortpl=$editortpl.print_input($kk,$vv['name'],"",$vv['value'],"textarea"," id=\"textarea".$kk."\" style=\"width:97%;height:200px;\" rows=\"8\" class=\"textarea\" ");
+											}
 										}
 										elseif (stristr($vv['type'],"image")) {
 											$o++;
 											list($trash,$opts)=explode(":",$vv['type']);
 											preg_match("/original\.(.*?)\?/is",$vv['value'],$matches);
 											$imgs="<br /><div class=\"images-box\"><label for=\"pictures\">".$vv['name']."</label><ul class=\"imglist\" id=\"item_".$kk."\"><li><a href=\"/uploaded/images/".$kk."/original.".$matches[1]."?".mt_rand()."\"><img src=\"/uploaded/images/".$kk."/100x100.".$matches[1]."?".mt_rand()."\" width=\"100\" height=\"100\" /></a></li></ul><a id=\"images_".$kk."_".$opts."\" class=\"upload\" href=\"#\" title=\"Click to upload\">upload</a></div>";
-											$editortpl=str_replace("{".$vv['name']."}",$imgs,$editortpl);
+											if (stristr($editortpl,"{".$vv['name']."}")) {
+												$editortpl=str_replace("{".$vv['name']."}",$imgs,$editortpl);
+											}
+											else {
+												$editortpl=$editortpl.$imgs;
+											}
 											$arr[$k]['tpl']=str_replace("{small_image}","<img src=\"/uploaded/images/".$kk."/255x188.".$matches[1]."?".mt_rand()."\" width=\"255\" height=\"188\" />",$arr[$k]['tpl']);
 										}
 										elseif (stristr($vv['type'],"limit")) {
 											$l++;
 											list($trash,$lmt)=explode(":",$vv['type']);
 											$height=ceil($lmt/100)*14;
-											$editortpl=str_replace("{".$vv['name']."}",print_input($kk,$vv['name'],"",$vv['value'],"textarea"," id=\"limit_".$l."\" class=\"limit\" rows=\"10\" cols=\"60\" style=\"height:".$height."px;width:97%\"")."<div id=\"limit_info_" . $l . "\" class=\"limit_info\">Character Limit ".print_input("limit","","",$lmt,"text"," size=\"3\"")."</div>\n",$editortpl);
+											if (stristr($editortpl,"{".$vv['name']."}")) {
+												$editortpl=str_replace("{".$vv['name']."}",print_input($kk,$vv['name'],"",$vv['value'],"textarea"," id=\"limit_".$l."\" class=\"limit\" rows=\"10\" cols=\"60\" style=\"height:".$height."px;width:97%\"")."<div id=\"limit_info_" . $l . "\" class=\"limit_info\">Character Limit ".print_input("limit","","",$lmt,"text"," size=\"3\"")."</div>\n",$editortpl);
+											}
+											else {
+												$editortpl=$editortpl.print_input($kk,$vv['name'],"",$vv['value'],"textarea"," id=\"limit_".$l."\" class=\"limit\" rows=\"10\" cols=\"60\" style=\"height:".$height."px;width:97%\"")."<div id=\"limit_info_" . $l . "\" class=\"limit_info\">Character Limit ".print_input("limit","","",$lmt,"text"," size=\"3\"")."</div>\n";
+											}
 										}
 										elseif ($vv['name']=="start") {
 											$editortpl=str_replace("{".$vv['name']."}","<div class=\"bx\">".print_input($kk,$vv['name'],"",$vv['value'],"text"," id=\"text".$kk."\" class=\"daterange\" ")."<span class=\"calicon_p\"><img width=\"14\" height=\"14\" border=\"0\" src=\"/img/calendar.png\" alt=\"date_1\" class=\"calicon\"></span></div>",$editortpl);
@@ -559,7 +579,12 @@ else {
 											$editortpl=str_replace("{".$vv['name']."}","<div class=\"bx until dates_select".$k."\" style=\"{d}\">".print_input($kk,$vv['name'],"",$vv['value'],"text"," id=\"text".$kk."\" class=\"multiple\" ")."<span class=\"calicon_p\"><img width=\"14\" height=\"14\" border=\"0\" src=\"/img/calendar.png\" alt=\"date_3\" class=\"calicon\"></span></div>",$editortpl);
 										}
 										else {
-											$editortpl=str_replace("{".$vv['name']."}",print_input($kk,$vv['name'],"",$vv['value'],"text"," id=\"text".$kk."\" class=\"".$vv['type']."\" ")."<br />",$editortpl);
+											if (stristr($editortpl,"{".$vv['name']."}")) {
+												$editortpl=str_replace("{".$vv['name']."}",print_input($kk,$vv['name'],"",$vv['value'],"text"," id=\"text".$kk."\" class=\"".$vv['type']."\" ")."<br />",$editortpl);
+											}
+											else {
+												$editortpl=$editortpl.print_input($kk,$vv['name'],"",$vv['value'],"text"," id=\"text".$kk."\" class=\"".$vv['type']."\" ")."<br />";
+											}
 										}
 									}
 									$z++;
