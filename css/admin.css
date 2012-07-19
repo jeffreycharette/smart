@@ -572,12 +572,18 @@ color:#080000;
 margin-top: 10px;
 }
 .edits .limit_info {
+	font-size: .875em;
 	margin-top: 3px;
+}
+.edits .limit_info input {
+	background-color: #FFFFFF;
 }
 
 .edits div.box textarea.limit,.edits div.box input.date,.edits div.box input.daterange,.edits div.box input.end,.edits div.box input.text, .edits div.box textarea.textarea, .edits div.box select.select {
+background-color: #EEEEEE;
+color: #080000;
+font-weight: normal;
 padding:2px;
-color:#080000;
 width:97%;
 }
 .edits div.box input.multiple {
