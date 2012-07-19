@@ -43,16 +43,10 @@ if (!isset($error)) {
 
 /* ACCESS ROUTING */
 if ($name=="edit") {
-	if ($_SESSION["user"]->username=="architect") {
-		echo "arch";
-	}
-	elseif ($_SESSION["user"]->username!="admin") {
+	if ($_SESSION["user"]->username!="admin" && $_SESSION["user"]->username!="architect") {
 		$_SESSION["history"]="";
 		header('Location: http://smart.wearecharette.com/login.html');
 	}
-	/*else {
-		$_GET['id']=2;
-	}*/
 }
 
 /* CHECK FOR FILE */

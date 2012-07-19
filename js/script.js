@@ -216,7 +216,11 @@ $(".tweet").tweet({
 /* slider */
 
 	$("a.slider").each( function(i) {
-		var color = $(this).find('img:first').attr('class');
+		var color = $(this).find('img:first').attr('class'),
+				title = $(this).find('img:first').attr('alt');
+		if (!title) {
+			title = $(this).find('h2:first').text();
+		}
 		if (!color) {
 			color = "orange";
 		}
