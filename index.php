@@ -580,10 +580,10 @@ else {
 										}
 										else {
 											if (stristr($editortpl,"{".$vv['name']."}")) {
-												$editortpl=str_replace("{".$vv['name']."}",print_input($kk,$vv['name'],"",$vv['value'],"text"," id=\"text".$kk."\" class=\"".$vv['type']."\" ")."<br />",$editortpl);
+												$editortpl=str_replace("{".$vv['name']."}",print_input($kk,$vv['name'],"",$vv['value'],"text"," id=\"text".$kk."\" class=\"".$vv['type']."\" "),$editortpl);
 											}
 											elseif (strlen($vv['name']) > 1) {
-												$editortpl=$editortpl.print_input($kk,$vv['name'],"",$vv['value'],"text"," id=\"text".$kk."\" class=\"".$vv['type']."\" ")."<br />";
+												$editortpl=$editortpl.print_input($kk,$vv['name'],"",$vv['value'],"text"," id=\"text".$kk."\" class=\"".$vv['type']."\" ");
 											}
 										}
 									}
