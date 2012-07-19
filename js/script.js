@@ -224,7 +224,7 @@ $(".tweet").tweet({
 		if (!color) {
 			color = "orange";
 		}
-		$(this).find('img:first').before('<hgroup class="'+color+'-wrapper-small"><h1>'+$(this).find('img:first').attr('alt')+'</h1></hgroup>');
+		$(this).find('img:first').before('<hgroup class="'+color+'-wrapper-small"><h1>'+title+'</h1></hgroup>');
 	});
 	$("a.slider").hover(
 		function () {
