@@ -1552,7 +1552,7 @@ hgroup.yellow-wrapper-small::after {
 #industry-detail h2, #industry-detail p {
 	padding-bottom: 19px;
 }
-#industry-detail img:first-child {
+#industry-detail img:nth-of-type(1) {
 	margin-bottom: 19px;
 }
 .indent {
