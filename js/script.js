@@ -220,6 +220,7 @@ $(".tweet").tweet({
 				title = $(this).find('img:first').attr('alt');
 		if (!title) {
 			title = $(this).find('h2:first').text();
+			$(this).find('img:first').attr('alt',title);
 		}
 		if (!color) {
 			color = "orange";
