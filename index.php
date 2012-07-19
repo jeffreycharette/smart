@@ -1788,7 +1788,7 @@ function resize($img, $thumb_width, $thumb_height, $newfilename, $square=FALSE, 
 		//Generate the file, and rename it to $newfilename
 		switch ($image_type) {
 			case 1: imagegif($thumb,$newfilename); break;
-			case 2: imagejpeg($thumb,$newfilename, 90);  break;
+			case 2: imagejpeg($thumb,$newfilename, 60);  break;
 			case 3: imagepng($thumb,$newfilename, 5); break;
 			$error="Failed resize image!";  break;
 		}
@@ -1797,7 +1797,7 @@ function resize($img, $thumb_width, $thumb_height, $newfilename, $square=FALSE, 
 		//Generate the file, and rename it to $newfilename
 		switch ($image_type) {
 			case 1: imagegif($newImg,$newfilename); break;
-			case 2: imagejpeg($newImg,$newfilename, 90);  break;
+			case 2: imagejpeg($newImg,$newfilename, 60);  break;
 			case 3: imagepng($newImg,$newfilename, 5); break;
 			$error="Failed resize image!";  break;
 		}
