@@ -213,7 +213,7 @@ else {
 						if (stristr($editortpl_new,"{".$model['name']."}")) {
 							$editortpl_new=str_replace("{".$model['name']."}",$model['value']."{".$model['name']."}",$editortpl_new);
 						}
-						else {
+						elseif (strlen($model['name']) > 1) {
 							$editortpl_new=$editortpl_new.$model['value']."{".$model['name']."}";
 						}
 					}
@@ -532,7 +532,7 @@ else {
 											if (stristr($editortpl,"{".$vv['name']."}")) {
 												$editortpl=str_replace("{".$vv['name']."}",print_input($kk,$vv['name'],"",$vv['value'],"textarea"," id=\"textarea".$kk."\" style=\"width:97%;height:200px;\" rows=\"8\" class=\"textarea\" "),$editortpl);
 											}
-											else {
+											elseif (strlen($vv['name']) > 1) {
 												$editortpl=$editortpl.print_input($kk,$vv['name'],"",$vv['value'],"textarea"," id=\"textarea".$kk."\" style=\"width:97%;height:200px;\" rows=\"8\" class=\"textarea\" ");
 											}
 										}
@@ -544,7 +544,7 @@ else {
 											if (stristr($editortpl,"{".$vv['name']."}")) {
 												$editortpl=str_replace("{".$vv['name']."}",$imgs,$editortpl);
 											}
-											else {
+											elseif (strlen($vv['name']) > 1) {
 												$editortpl=$editortpl.$imgs;
 											}
 											$arr[$k]['tpl']=str_replace("{small_image}","<img src=\"/uploaded/images/".$kk."/255x188.".$matches[1]."?".mt_rand()."\" width=\"255\" height=\"188\" />",$arr[$k]['tpl']);
@@ -556,7 +556,7 @@ else {
 											if (stristr($editortpl,"{".$vv['name']."}")) {
 												$editortpl=str_replace("{".$vv['name']."}",print_input($kk,$vv['name'],"",$vv['value'],"textarea"," id=\"limit_".$l."\" class=\"limit\" rows=\"10\" cols=\"60\" style=\"height:".$height."px;width:97%\"")."<div id=\"limit_info_" . $l . "\" class=\"limit_info\">Character Limit ".print_input("limit","","",$lmt,"text"," size=\"3\"")."</div>\n",$editortpl);
 											}
-											else {
+											elseif (strlen($vv['name']) > 1) {
 												$editortpl=$editortpl.print_input($kk,$vv['name'],"",$vv['value'],"textarea"," id=\"limit_".$l."\" class=\"limit\" rows=\"10\" cols=\"60\" style=\"height:".$height."px;width:97%\"")."<div id=\"limit_info_" . $l . "\" class=\"limit_info\">Character Limit ".print_input("limit","","",$lmt,"text"," size=\"3\"")."</div>\n";
 											}
 										}
@@ -582,7 +582,7 @@ else {
 											if (stristr($editortpl,"{".$vv['name']."}")) {
 												$editortpl=str_replace("{".$vv['name']."}",print_input($kk,$vv['name'],"",$vv['value'],"text"," id=\"text".$kk."\" class=\"".$vv['type']."\" ")."<br />",$editortpl);
 											}
-											else {
+											elseif (strlen($vv['name']) > 1) {
 												$editortpl=$editortpl.print_input($kk,$vv['name'],"",$vv['value'],"text"," id=\"text".$kk."\" class=\"".$vv['type']."\" ")."<br />";
 											}
 										}
