@@ -213,7 +213,7 @@ else {
 						if (stristr($editortpl_new,"{".$model['name']."}")) {
 							$editortpl_new=str_replace("{".$model['name']."}",$model['value']."{".$model['name']."}",$editortpl_new);
 						}
-						elseif (strlen($model['name']) > 1) {
+						elseif (strlen($model['name']) > 1 && $model['type'] != "tpl") {
 							$editortpl_new=$editortpl_new.$model['value']."{".$model['name']."}";
 						}
 					}
