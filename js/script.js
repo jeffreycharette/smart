@@ -274,5 +274,18 @@ $(".tweet").tweet({
 		var hash = window.location.hash.substring(1);
 		$('a[href*=#'+hash+']:first').trigger('click');
 	}*/
+	function isiPhone(){
+	    return (
+	        //Detect iPhone
+	        (navigator.platform.indexOf("iPhone") != -1) ||
+	        //Detect iPod
+	        (navigator.platform.indexOf("iPod") != -1) ||
+					//Detect iPad
+					(navigator.platform.indexOf("iPad") != -1)
+	    );
+	}
+	if ( isiPhone() ) {
+		$('.slider hgroup, .slider hgroup h1').width('auto');
+	}
 	
 });
