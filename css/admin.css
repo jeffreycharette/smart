@@ -589,6 +589,9 @@ width:97%;
 .edits div.box textarea.limit:focus,.edits div.box input.date:focus,.edits div.box input.daterange:focus,.edits div.box input.end:focus,.edits div.box input.text:focus, .edits div.box textarea.textarea:focus, .edits div.box select.select:focus {
 	background-color: #FFFFFF;
 }
+#tinymce {
+	background-color: #FFFFFF;
+}
 .edits div.box input.multiple {
 	padding-right: 25px;
 }
