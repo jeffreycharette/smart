@@ -56,7 +56,7 @@ $(function() {
 		}
 	});
 	
-	if (workCount <= workLength) {
+	if (workCount >= workLength) {
 		$('#load-more').hide();
 	}
 	else {
