@@ -56,26 +56,31 @@ $(function() {
 		}
 	});
 	
-	$('#load-more').click( function() {
-		loadCount = loadCount + workCount;
+	if (workCount <= workLength) {
+		$('#load-more').hide();
+	}
+	else {
+		$('#load-more').click( function() {
+			loadCount = loadCount + workCount;
 		
-		// add class to show more elements
-		$('#work article:lt('+loadCount+')').addClass('show');
+			// add class to show more elements
+			$('#work article:lt('+loadCount+')').addClass('show');
 		
-		// filter with isotope
-		$('#work').isotope({ filter : $('#work article.show') })
-		.find('.medium').each(function(){
-		  var position = $(this).data('isotope-item-position');
-			if (position) {
-				if (position.x == 0) {
-					$(this).css({'margin-left' : 0});
+			// filter with isotope
+			$('#work').isotope({ filter : $('#work article.show') })
+			.find('.medium').each(function(){
+			  var position = $(this).data('isotope-item-position');
+				if (position) {
+					if (position.x == 0) {
+						$(this).css({'margin-left' : 0});
+					}
 				}
+			});
+			if (loadCount == workLength) {
+				$('#load-more').hide();
 			}
 		});
-		if (loadCount == workLength) {
-			$('#load-more').hide();
-		}
-	});
+	}
 
 /* Custom Select */
 $('#industry, #select-contributors, #select-filter, #select-archive').SelectCustomizer();
