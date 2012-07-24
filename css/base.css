@@ -822,7 +822,7 @@ article.small a:hover h2 {
 	width: 480px;
 }
 #work article.medium {
-	margin-left: 160px;
+	/*margin-left: 160px;*/
 	width: 320px;
 }
 #industries article.medium {
@@ -833,12 +833,12 @@ article.small a:hover h2 {
 }
 #work article.small {
 	height: 147px;
-	margin-top: 78px;
+	/*margin-top: 78px;*/
 	width: 440px;
 }
 #work article.small img {
 	float: left;
-	margin-right: 17px;
+	/*margin-right: 17px;*/
 }
 article.large h2,
 article.medium h2,
