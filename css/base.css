@@ -825,6 +825,7 @@ article.small a:hover h2 {
 	width: 486px;
 }
 #work article.medium {
+	height:438px;
 	margin-left: 160px;
 	width: 320px;
 }
