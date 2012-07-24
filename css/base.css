@@ -814,7 +814,7 @@ article.small a:hover h2 {
 #work article {
 	margin-bottom: 107px;
 	padding-left: 5px;
-	overflow: auto;
+	overflow: hidden;
 	clear: both;
 }
 #industries article {
