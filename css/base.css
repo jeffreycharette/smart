@@ -814,11 +814,14 @@ article.small a:hover h2 {
 #work article {
 	/*margin-bottom: 107px;*/
 	padding-left: 5px;
+	overflow: auto;
+	clear: both;
 }
 #industries article {
 	padding-left: 5px;
 }
 #work article.large {
+	height: 550px;
 	width: 480px;
 }
 #work article.medium {
