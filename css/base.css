@@ -812,7 +812,7 @@ article.small a:hover h2 {
 	color: #FF6A11;
 }
 #work article {
-	/*margin-bottom: 107px;*/
+	margin-bottom: 107px;
 	padding-left: 5px;
 	overflow: auto;
 	clear: both;
@@ -821,11 +821,11 @@ article.small a:hover h2 {
 	padding-left: 5px;
 }
 #work article.large {
-	height: 550px;
-	width: 480px;
+	height: 590px;
+	width: 486px;
 }
 #work article.medium {
-	/*margin-left: 160px;*/
+	margin-left: 160px;
 	width: 320px;
 }
 #industries article.medium {
@@ -836,12 +836,12 @@ article.small a:hover h2 {
 }
 #work article.small {
 	height: 147px;
-	/*margin-top: 78px;*/
+	margin-top: 78px;
 	width: 440px;
 }
 #work article.small img {
 	float: left;
-	/*margin-right: 17px;*/
+	margin-right: 17px;
 }
 article.large h2,
 article.medium h2,
