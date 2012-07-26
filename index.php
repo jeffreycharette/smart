@@ -525,14 +525,14 @@ else {
 										else {
 											$$vv['name']=$vv['value'];
 											$arr[$k]['tpl']=str_replace("{".$vv['name']."}",$vv['value'],$arr[$k]['tpl']);
+											$sanitary_name = sanitize_filename($vv['value']).":";
+											$arr[$k]['tpl']=str_replace("{".$vv['name'].".sanitize}",$sanitary_name,$arr[$k]['tpl']);
 											$arr[$k]['tpl']=str_replace("{anchor_link}","#entry_".$k,$arr[$k]['tpl']);
 											$arr[$k]['tpl']=str_replace("{urlencoded_".$vv['name']."}",urlencode($vv['value']),$arr[$k]['tpl']);
 										}
 										if ($vv['type']=="textarea" || $vv['type']=="content") {
 											if (stristr($editortpl,"{".$vv['name']."}")) {
 												$editortpl=str_replace("{".$vv['name']."}",print_input($kk,$vv['name'],"",$vv['value'],"textarea"," id=\"textarea".$kk."\" style=\"width:97%;height:200px;\" rows=\"8\" class=\"textarea\" "),$editortpl);
-												$sanitary_name = sanitize_filename($vv['value']).":";
-												$editortpl=str_replace("{".$vv['name'].".sanitize}",print_input($kk,$vv['name'],"",$sanitary_name,"textarea"," id=\"textarea".$kk."\" style=\"width:97%;height:200px;\" rows=\"8\" class=\"textarea\" "),$editortpl);
 											}
 											elseif (strlen($vv['name']) > 1) {
 												$editortpl=$editortpl.print_input($kk,$vv['name'],"",$vv['value'],"textarea"," id=\"textarea".$kk."\" style=\"width:97%;height:200px;\" rows=\"8\" class=\"textarea\" ");
@@ -583,8 +583,6 @@ else {
 										else {
 											if (stristr($editortpl,"{".$vv['name']."}")) {
 												$editortpl=str_replace("{".$vv['name']."}",print_input($kk,$vv['name'],"",$vv['value'],"text"," id=\"text".$kk."\" class=\"".$vv['type']."\" "),$editortpl);
-												$sanitary_name = sanitize_filename($vv['value']).":";
-												$editortpl=str_replace("{".$vv['name'].".sanitize}",print_input($kk,$vv['name'],"",$sanitary_name,"text"," id=\"text".$kk."\" class=\"".$vv['type']."\" "),$editortpl);
 											}
 											elseif (strlen($vv['name']) > 1) {
 												$editortpl=$editortpl.print_input($kk,$vv['name'],"",$vv['value'],"text"," id=\"text".$kk."\" class=\"".$vv['type']."\" ");
