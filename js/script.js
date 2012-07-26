@@ -94,8 +94,8 @@ $("#industry_customselect").bind('filtered',function(e, value) {
 	var value = '.'+value.replace(/ /g, '-');
 	if (value == '.all-expertise') { value = '*';}
 	
-	$('#work article.large, #work article.small').removeClass('large, small').addClass('medium');
-	$('#work .medium img').css({ 'width':'100%', 'height':'auto' });
+	$('#work article.large, #work article.small').removeClass('large small').addClass('medium');
+	$('#work .medium img').css({ 'width':'99%', 'height':'auto' });
 	
 	$('#work').find('> '+value).each( function(i){
 		i++;
