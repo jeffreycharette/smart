@@ -68,7 +68,7 @@ $(function() {
 		
 			// filter with isotope
 			$('#work').isotope({ filter : $('#work article.show') })
-			.find('.medium').each(function(){
+			.find('.medium, .small').each(function(){
 			  var position = $(this).data('isotope-item-position');
 				if (position) {
 					if (position.x == 0) {
