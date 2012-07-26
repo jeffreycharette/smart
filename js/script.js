@@ -96,7 +96,7 @@ $("#industry_customselect").bind('filtered',function(e, value) {
 	
 	$('#work article.large, #work article.small').removeClass('large small').addClass('medium');
 	$('#work .medium img').css({ 'width':'99%', 'height':'auto' });
-	
+	console.log('> '+value);
 	$('#work').find('> '+value).each( function(i){
 		i++;
 		if ((i%3)==0) {
