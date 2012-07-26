@@ -531,9 +531,11 @@ else {
 										if ($vv['type']=="textarea" || $vv['type']=="content") {
 											if (stristr($editortpl,"{".$vv['name']."}")) {
 												$editortpl=str_replace("{".$vv['name']."}",print_input($kk,$vv['name'],"",$vv['value'],"textarea"," id=\"textarea".$kk."\" style=\"width:97%;height:200px;\" rows=\"8\" class=\"textarea\" "),$editortpl);
+												$editortpl=str_replace("{".$vv['name']."}",print_input($kk,$vv['name'],"",sanitize_filename($vv['value']),"textarea"," id=\"textarea".$kk."\" style=\"width:97%;height:200px;\" rows=\"8\" class=\"textarea\" "),$editortpl);
 											}
 											elseif (strlen($vv['name']) > 1) {
 												$editortpl=$editortpl.print_input($kk,$vv['name'],"",$vv['value'],"textarea"," id=\"textarea".$kk."\" style=\"width:97%;height:200px;\" rows=\"8\" class=\"textarea\" ");
+												$editortpl=$editortpl.print_input($kk,$vv['name'],"",sanitize_filename($vv['value']),"textarea"," id=\"textarea".$kk."\" style=\"width:97%;height:200px;\" rows=\"8\" class=\"textarea\" ");
 											}
 										}
 										elseif (stristr($vv['type'],"image")) {
@@ -581,9 +583,11 @@ else {
 										else {
 											if (stristr($editortpl,"{".$vv['name']."}")) {
 												$editortpl=str_replace("{".$vv['name']."}",print_input($kk,$vv['name'],"",$vv['value'],"text"," id=\"text".$kk."\" class=\"".$vv['type']."\" "),$editortpl);
+												$editortpl=str_replace("{".$vv['name']."}",print_input($kk,$vv['name'],"",sanitize_filename($vv['value']),"text"," id=\"text".$kk."\" class=\"".$vv['type']."\" "),$editortpl);
 											}
 											elseif (strlen($vv['name']) > 1) {
 												$editortpl=$editortpl.print_input($kk,$vv['name'],"",$vv['value'],"text"," id=\"text".$kk."\" class=\"".$vv['type']."\" ");
+												$editortpl=$editortpl.print_input($kk,$vv['name'],"",sanitize_filename($vv['value']),"text"," id=\"text".$kk."\" class=\"".$vv['type']."\" ");
 											}
 										}
 									}
