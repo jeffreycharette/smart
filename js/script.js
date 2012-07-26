@@ -92,12 +92,11 @@ $("#industry_customselect").bind('filtered',function(e, value) {
 	$('#search').val('');
 	
 	var value = '.'+value.replace(/ /g, '-');
-	if (value == '.all-expertise') { value = '*';}
+	if (value == '.all-expertise') { value = 'article';}
 	
 	$('#work article.large, #work article.small').removeClass('large small').addClass('medium');
 	$('#work .medium img').css({ 'width':'99%', 'height':'auto' });
-	console.log('> '+value);
-	$('#work').find('> '+value).each( function(i){
+	$('#work').find(value).each( function(i){
 		i++;
 		if ((i%3)==0) {
 			$(this).css({ 'margin-right':0 });
