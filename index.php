@@ -525,7 +525,7 @@ else {
 										else {
 											$$vv['name']=$vv['value'];
 											$arr[$k]['tpl']=str_replace("{".$vv['name']."}",$vv['value'],$arr[$k]['tpl']);
-											$sanitary_name = sanitize_filename($vv['value']).":";
+											$sanitary_name = sanitize_filename($vv['value']);
 											$arr[$k]['tpl']=str_replace("{".$vv['name'].".sanitize}",$sanitary_name,$arr[$k]['tpl']);
 											$arr[$k]['tpl']=str_replace("{anchor_link}","#entry_".$k,$arr[$k]['tpl']);
 											$arr[$k]['tpl']=str_replace("{urlencoded_".$vv['name']."}",urlencode($vv['value']),$arr[$k]['tpl']);
