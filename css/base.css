@@ -1752,14 +1752,11 @@ article.news iframe.video {
 
 /* Capabilities */
 
-#section-nav p {
+#section-top p {
 	text-align: center;
 }
-#section-nav li {
-	margin-left:19px;
-}
-#section-nav li p {
-	text-align: center;
+#section-top li {
+	margin-left: 19px;
 }
 
 .section-column {
