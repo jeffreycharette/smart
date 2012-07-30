@@ -1220,7 +1220,7 @@ ul.comments {
 .grid article.small, .latest-grid article.small {
 	width: 147px;
 }
-.grid .latest-wrapper h2 {
+.latest-wrapper .grid h2 {
 	margin-bottom: 0;
 }
 .grid article.large {
