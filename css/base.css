@@ -1506,7 +1506,7 @@ padding:24px;
 }
 #detail {
 	background: #FFFFFF;
-	padding: 23px 0;
+	padding: 15px 0 23px;
 }
 #detail .border {
 	clear: both;
