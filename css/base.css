@@ -1283,7 +1283,7 @@ ul.comments {
 }
 #blogs article img {
 	float: right;
-	margin: 3px 15px 3px 3px;
+	margin: 3px 3px 3px 15px;
 }
 #blogs a:link,
 #blogs a:visited,
@@ -1507,6 +1507,17 @@ padding:24px;
 #detail {
 	background: #FFFFFF;
 	padding: 23px 0;
+}
+#detail .border {
+	background: #FFFFFF url('images/bg-article.png') repeat-y top center;
+	clear: both;
+	overflow: hidden;
+}
+#detail .border::before {
+	content: url('images/bg-article-top.png');
+}
+#detail .border::after {
+	content: url('images/bg-article-bottom.png');
 }
 hgroup.orange-wrapper, hgroup.orange-wrapper-small,
 hgroup.green-wrapper, hgroup.green-wrapper-small,
