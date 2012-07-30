@@ -1498,9 +1498,6 @@ padding:24px;
 	clear: both;
 	overflow: hidden;
 }
-#detail {
-	overflow-y: hidden;
-}
 .grid-four article {
 	float: right;
 	margin-left: 17px;
