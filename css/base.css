@@ -1509,15 +1509,15 @@ padding:24px;
 	padding: 23px 0;
 }
 #detail .border {
-	background: #FFFFFF url('images/bg-article.png') repeat-y top center;
+	background: #FFFFFF url('images/bg-article.gif') repeat-y top center;
 	clear: both;
 	overflow: hidden;
 }
 #detail .border::before {
-	content: url('images/bg-article-top.png');
+	content: url('images/bg-article-top.gif');
 }
 #detail .border::after {
-	content: url('images/bg-article-bottom.png');
+	content: url('images/bg-article-bottom.gif');
 }
 hgroup.orange-wrapper, hgroup.orange-wrapper-small,
 hgroup.green-wrapper, hgroup.green-wrapper-small,
