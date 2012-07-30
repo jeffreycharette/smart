@@ -1514,13 +1514,13 @@ padding:24px;
 	margin-bottom: 60px;
 	position: relative;
 	width: 1015px;
-	-moz-box-shadow: 0 30px 0 0 #FFFFFF, 0 -30px 0 0 #FFFFFF, 0 0 30px 0 rgba(0, 0, 0, .5);
-  -webkit-box-shadow: 0 30px 0 0 #FFFFFF, 0 -30px 0 0 #FFFFFF, 0 0 30px 0 rgba(0, 0, 0, .5);
-  box-shadow: 0 30px 0 0 #FFFFFF, 0 -30px 0 0 #FFFFFF, 0 0 30px 0 rgba(0, 0, 0, .5);
+	-moz-box-shadow: 0 30px 0 0 #FFFFFF, 0 -30px 0 0 #FFFFFF, 0 0 30px 0 rgba(0, 0, 0, .2);
+  -webkit-box-shadow: 0 30px 0 0 #FFFFFF, 0 -30px 0 0 #FFFFFF, 0 0 30px 0 rgba(0, 0, 0, .2);
+  box-shadow: 0 30px 0 0 #FFFFFF, 0 -30px 0 0 #FFFFFF, 0 0 30px 0 rgba(0, 0, 0, .2);
 	/* For IE 8 */
-	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=.5, Direction=0, Color='#000000')";
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=.2, Direction=0, Color='#000000')";
 	/* For IE 5.5 - 7 */
-	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=.5, Direction=0, Color='#000000');
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=.2, Direction=0, Color='#000000');
 }
 hgroup.orange-wrapper, hgroup.orange-wrapper-small,
 hgroup.green-wrapper, hgroup.green-wrapper-small,
