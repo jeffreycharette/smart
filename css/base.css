@@ -1226,9 +1226,6 @@ ul.comments {
 .grid article.large {
 	width: 314px;
 }
-.grid article.large:nth-child(2) {
-	margin-top: 15px;
-}
 .grid article p, .latest-grid article p {
 	font-size: .76em;
 	margin: 0 0 19px 3px;
