@@ -1494,9 +1494,12 @@ padding:24px;
 	content: url('images/bg-article-bottom.png');
 	position: absolute;
 }*/
-#detail, #industry-detail {
+#industry-detail {
 	clear: both;
 	overflow: hidden;
+}
+#detail {
+	overflow-y: hidden;
 }
 .grid-four article {
 	float: right;
