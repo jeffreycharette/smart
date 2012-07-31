@@ -1688,6 +1688,10 @@ hgroup.yellow-wrapper-small::after {
 	width:147px;
 }
 
+#bios li img {
+	position: absolute;
+}
+
 /* news */
 
 .subnav li a.orange-link:link,
