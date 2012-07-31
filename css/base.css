@@ -1684,6 +1684,7 @@ hgroup.yellow-wrapper-small::after {
 	height:147px;
 	margin-left:19px;
 	margin-bottom:19px;
+	overflow: hidden;
 	width:147px;
 }
 
