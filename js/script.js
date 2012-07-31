@@ -258,7 +258,7 @@ $(".tweet").tweet({
 	  function () {
 	    $(this).find('img:first').stop().fadeIn();
 	  }
-	});
+	);
 	
 	/* modal code not used */
 	
