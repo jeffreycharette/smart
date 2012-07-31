@@ -253,12 +253,12 @@ $(".tweet").tweet({
 	
 	$('#bios li').mouseenter(
 		function(){
-			$(this).stop().animate({opacity:.0001});
+			$(this).find('img:first').stop().animate({opacity:.0001});
 		});
 		
 	$('#bios li').mouseleave(
 		function(){
-			$(this).stop().animate({opacity:1});	
+			$(this).find('img:first').stop().animate({opacity:1});	
 	});
 	
 	/* modal code not used */
