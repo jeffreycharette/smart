@@ -1677,6 +1677,16 @@ hgroup.yellow-wrapper-small::after {
 	width: auto;
 }
 
+/*hover-fader*/
+
+#bios li {
+	float:left;
+	height:147px;
+	margin-left:19px;
+	margin-bottom:19px;
+	width:147px;
+}
+
 /* news */
 
 .subnav li a.orange-link:link,
@@ -1974,24 +1984,6 @@ h2.look-ahead {
 #search-results img {
 	float: left;
 	margin-right: 19px;
-}
-
-/*hover-fader*/
-
-.hover-fader {
-	width:147px;
-	height:147px;
-	float:left;
-	margin-left:19px;
-	margin-bottom:19px;
-}
-
-.hover-under {
-	position:absolute;
-}
-.hover-over {
-	position:absolute;
-	z-index:2;
 }
 
 /* footer */
