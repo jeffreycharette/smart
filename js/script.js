@@ -251,14 +251,13 @@ $(".tweet").tweet({
 	
 	/* leadership */
 	
-	$('.hover-over').mouseenter(
-		function(){
-			$(this).stop().animate({opacity:.0001});
-		});
-		
-	$('.hover-over').mouseleave(
-		function(){
-			$(this).stop().animate({opacity:1});	
+	$('#bios li').hover(
+		function () {
+	    $(this).find('img:first').stop().fadeOut();
+	  }, 
+	  function () {
+	    $(this).find('img:first').stop().fadeIn();
+	  }
 	});
 	
 	/* modal code not used */
