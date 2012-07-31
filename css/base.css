@@ -1692,6 +1692,10 @@ hgroup.yellow-wrapper-small::after {
 	position: absolute;
 }
 
+#leadership li {
+	padding: 10px;
+}
+
 /* news */
 
 .subnav li a.orange-link:link,
