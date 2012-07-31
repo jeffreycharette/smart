@@ -252,12 +252,12 @@ $(".tweet").tweet({
 	/* leadership */
 	
 	$('#bios li').mouseenter(
-		function(){
+		function() {
 			$(this).find('img:first').stop().animate({opacity:.0001});
 		});
 		
 	$('#bios li').mouseleave(
-		function(){
+		function() {
 			$(this).find('img:first').stop().animate({opacity:1});	
 	});
 	
