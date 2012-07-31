@@ -251,7 +251,7 @@ $(".tweet").tweet({
 	
 	/* leadership */
 	
-	$('#bios li img:first').css('zIndex':2);
+	$('#bios li').find('img:first').css({'zIndex':2});
 	$('#bios li').mouseenter(
 		function() {
 			$(this).find('img:first').stop().animate({opacity:.0001});
