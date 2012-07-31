@@ -914,6 +914,7 @@ h2.allcaps {
 font-family: 'Helvetica Neue', 'HelveticaNeue', Arial, Helvetica, sans-serif;
 }
 #grid .small h2 {
+	font-size: 1em;
 	padding: 3px 0 5px;
 }
 #grid .small p {
