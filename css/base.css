@@ -316,7 +316,7 @@ nav ul li {
 	top: 7px;
 }
 #secondary ul li {
-	font-size: .75em;
+	font-size: .875em;
 }
 #secondary ul li a:link, 
 #secondary ul li a:visited, 
@@ -681,7 +681,7 @@ ul.industries {
 		padding-bottom: 8px;
 	}
 	#gallery article header > p {
-		font-size: .75em;
+		font-size: .875em;
 		font-weight: bold;
 		padding-top: 5px;
 	}
@@ -1865,7 +1865,7 @@ h2.look-ahead {
 
 .caption {
 	font-family: 'Helvetica Neue', 'HelveticaNeue', Arial, Helvetica, sans-serif;
-	font-size: .75em;
+	font-size: .875em;
 	font-weight: bold;
 	padding-left: 5px;
 }
