@@ -563,7 +563,7 @@ ul.industries {
 .slideshow {
 	float: left;
 }
-#gallery img, .grid img, .latest-grid img, .description, #work img, #industries img, #related-list img, #grid img, .grid-four img, img.shadow, #studios img, #grid-working-here img, .tweet_list .tweet_avatar img, #detail img, #blogs article img, #search-results img {
+#gallery img, .grid img, .latest-grid img, .description, #work img, #industries img, #related-list img, #grid img, .grid-four img, img.shadow, #studios img, #grid-working-here img, .tweet_list .tweet_avatar img, #detail img, #blogs article img, #search-results img, #bios img {
 	-moz-box-shadow: 0 1px 5px #666666;
 	-webkit-box-shadow: 0 1px 5px #666666;
 	box-shadow: 0 1px 5px #666666;
@@ -1679,27 +1679,26 @@ hgroup.yellow-wrapper-small::after {
 
 /*hover-fader*/
 #bios {
-	float:right;
+	float: right;
 	width: 667px;
 }
 #bios figure {
-	float:left;
-	height:167px;
-	margin-left:19px;
-	margin-bottom:19px;
-	width:147px;
+	float: left;
+	height: 200px;
+	margin-left: 19px;
+	width: 147px;
 }
 #bios figcaption {
 	font-weight: bold;
-	font-size: 1em;
+	font-size: .8em;
 	position: relative;
 	top: 147px;
 }
 
 #bios img {
-	height:147px;
+	height: 147px;
 	position: absolute;
-	width:147px;
+	width: 147px;
 }
 
 #leadership li {
