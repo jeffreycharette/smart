@@ -927,7 +927,17 @@ font-family: 'Helvetica Neue', 'HelveticaNeue', Arial, Helvetica, sans-serif;
 	padding: 10px 0;
 }
 .grid-four {
+	position: relative;
 	width: 648px;
+}
+.grid-four article {
+	float: left;
+	margin-right: 17px;
+	margin-left: 2px;
+	width: 147px;
+}
+.grid-four article.last {
+	margin-right: 0;
 }
 #detail .grid-four img, .grid-four img {
 	margin: 0px 15px 15px 0px;
@@ -1037,7 +1047,7 @@ aside.grey {
 	background-color: #f1f1f2;
 	float: right;
 	padding: 12px 12px 0 12px;
-	margin-right: 2px;
+	margin: 0 2px 19px 0;
 	width: 290px;
 }
 aside.grey p {
@@ -1500,12 +1510,6 @@ padding:24px;
 	clear: both;
 	overflow: hidden;
 }
-.grid-four article {
-	float: right;
-	margin-left: 17px;
-	margin-right: 2px;
-	width: 147px;
-}
 #detail {
 	background: #FFFFFF;
 	padding: 15px 0 23px;
@@ -1684,13 +1688,16 @@ hgroup.yellow-wrapper-small::after {
 }
 #bios figure {
 	float: left;
-	height: 205px;
+	height: 208px;
 	margin-left: 19px;
 	width: 147px;
 }
 #bios figcaption {
 	font-weight: bold;
 	font-size: .875em;
+	height: 40px;
+	overflow: hidden;
+	padding-left: 3px;
 	position: relative;
 	top: 160px;
 }
