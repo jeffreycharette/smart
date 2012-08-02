@@ -1684,15 +1684,16 @@ hgroup.yellow-wrapper-small::after {
 }
 #bios figure {
 	float:left;
+	height:167px;
 	margin-left:19px;
 	margin-bottom:19px;
-	overflow: hidden;
+	width:147px;
 }
 #bios figcaption {
 	font-weight: bold;
 }
 
-#bios li img {
+#bios img {
 	height:147px;
 	position: absolute;
 	width:147px;
