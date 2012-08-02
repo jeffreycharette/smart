@@ -130,7 +130,7 @@ input, textarea, select {
 	border-bottom:1px solid #DDDDDD;
 	color:#333333;
 	font-family: 'Helvetica Neue', 'HelveticaNeue', Arial, Helvetica, sans-serif;
-	font-size: .8em;
+	font-size: .875em;
 	font-weight: bold;
 	height: 21px;
 	padding: 2px 7px;
@@ -497,7 +497,7 @@ ul.industries {
 .industries li a:visited,
 .industries li a:active {
 	color: #333333;
-	font-size: .8em;
+	font-size: .875em;
 	font-weight: bold;
 	display: block;
 }
@@ -918,7 +918,7 @@ font-family: 'Helvetica Neue', 'HelveticaNeue', Arial, Helvetica, sans-serif;
 	padding: 3px 0 5px;
 }
 #grid .small p {
-	font-size: .8em;
+	font-size: .875em;
 }
 #grid figcaption {
 	margin: 0 3px;
@@ -1262,7 +1262,7 @@ ul.comments {
 	padding-bottom: 4px;
 }
 #detail figure figcaption p {
-	font-size: .8em;
+	font-size: .875em;
 	padding-bottom: 0;
 }
 
@@ -1344,7 +1344,7 @@ ul.comments {
 #expertise article a:hover,
 #expertise article a:focus {
 	color:#FF6A11;
-	font-size: .8125em;
+	font-size: .875em;
 	font-weight: bold;
 }
 
@@ -1393,7 +1393,7 @@ ul.comments {
 }
 .meta {
 	float: left;
-	font-size: .8125em;
+	font-size: .875em;
 	margin: 87px 29px 0 0;
 	width: 147px;
 }
@@ -1418,7 +1418,7 @@ ul.comments {
 #article-list .copy a:hover,
 #article-list .copy a:focus {
 	color:#FF6A11;
-	font-size: .8125em;
+	font-size: .875em;
 	font-weight: bold;
 }
 #article-list img {
@@ -1466,7 +1466,7 @@ padding:24px;
 }
 #related-list article p, #thinking-detail article p {
 	color: #666666;
-	font-size: .8125em;
+	font-size: .875em;
 	margin-left: 2px;
 	padding-bottom: 24px;
 }
@@ -1690,7 +1690,7 @@ hgroup.yellow-wrapper-small::after {
 }
 #bios figcaption {
 	font-weight: bold;
-	font-size: .8em;
+	font-size: .875em;
 	position: relative;
 	top: 157px;
 }
@@ -1713,7 +1713,7 @@ hgroup.yellow-wrapper-small::after {
  {
 	background: #FFFFFF;
 	color: #333333;
-	font-size: .8125em;
+	font-size: .875em;
 	font-weight: bold;
 	float: left;
 	height: 17px;
@@ -1921,25 +1921,25 @@ h2.look-ahead {
 
 .side-bar {
 	float: left;
-	font-size: .8125em;
+	font-size: .875em;
 	margin: 40px 29px 0 0;
 	width: 147px;
 }
 .side-bar-right {
 	float: right;
-	font-size: .8125em;
+	font-size: .875em;
 	margin: 40px 29px 0 0;
 	width: 314px;
 }
 .side-bar-top {
 	float: left;
-	font-size: .8125em;
+	font-size: .875em;
 	margin: 0px 29px 0 0;
 	width: 147px;
 }
 .side-bar-section {
 	float: left;
-	font-size: .8125em;
+	font-size: .875em;
 	margin: 40px 29px 0 0;
 	width: 147px;
 }
@@ -1979,7 +1979,7 @@ h2.look-ahead {
 .slide-number {
 	color: #666666;
 	float: left;
-	font-size: .8125em;
+	font-size: .875em;
 	padding-right: 10px;
 	padding-top: 5px;
 }
@@ -2093,7 +2093,7 @@ footer .social li {
 }
 .adr, .tel {
 	color: #666666;
-	font-size: .8125em;
+	font-size: .875em;
 }
 #hcard-new-york {
 	background: #f3f3eb url('images/bg-new-york.gif') no-repeat 0 0;
@@ -2191,7 +2191,7 @@ footer .social li {
 #select-archive_iconselect {
 	background: url('images/bg-select.gif') no-repeat;
 	color: #333333;
-	font-size: .8125em;
+	font-size: .875em;
 	font-weight: bold;
 	float: left;
 	height: 17px;
