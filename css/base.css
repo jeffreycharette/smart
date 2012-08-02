@@ -850,7 +850,7 @@ article.medium h2,
 article.small h2,
 #industries article h2 {
 	font-family: 'Helvetica Neue', 'HelveticaNeue', Arial, Helvetica, sans-serif;
-	font-size: .9375em;
+	font-size: .875em;
 	font-weight: bold;
 	margin-left: 3px;
 	padding-bottom: 9px;
@@ -1459,7 +1459,7 @@ padding:24px;
 #related-list article h2, #thinking-detail article h2 {
 	color: #333333;
 	font-family: 'Helvetica Neue Bold', 'HelveticaNeue-Bold', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-	font-size: .9375em;
+	font-size: .875em;
 	margin: 8px 0 13px 2px;
 	text-shadow: none;
 	text-transform: none;
@@ -1684,7 +1684,7 @@ hgroup.yellow-wrapper-small::after {
 }
 #bios figure {
 	float: left;
-	height: 200px;
+	height: 205px;
 	margin-left: 19px;
 	width: 147px;
 }
@@ -1692,7 +1692,7 @@ hgroup.yellow-wrapper-small::after {
 	font-weight: bold;
 	font-size: .875em;
 	position: relative;
-	top: 157px;
+	top: 160px;
 }
 
 #bios img {
@@ -1872,7 +1872,7 @@ h2.look-ahead {
 
 .products {
 	clear:both;
-	font-size: .9375em;
+	font-size: .875em;
 	overflow: hidden;
 	padding-top:100px;
 	padding-bottom:100px;
@@ -1893,14 +1893,14 @@ h2.look-ahead {
 .products li p {
 	width: 147px;
 	font-family: 'Helvetica Neue', 'HelveticaNeue', Arial, Helvetica, sans-serif;
-	font-size: .9375em;
+	font-size: .875em;
 	font-weight: none;
 }
 
 .products li h2 {
 	font-family: 'Helvetica Neue', 'HelveticaNeue', Arial, Helvetica, sans-serif;
 	font-weight: bold;
-	font-size: .9375em;
+	font-size: .875em;
 	text-shadow: none;
 	
 }
@@ -2218,7 +2218,7 @@ footer .social li {
 	width: 202px;
 }
 .selectwrapper .selectitems {  
-	font-size: .9375em;
+	font-size: .875em;
 	font-weight: bold;
 	padding:3px;
 	z-index: 10000; 
@@ -2264,7 +2264,7 @@ footer .social li {
 	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=180, Color='#999999');
 }
 .jsonSuggest li.ui-menu-item {  
-	font-size: .9375em;
+	font-size: .875em;
 	font-weight: bold;
 	padding:3px;
 	z-index: 10000; 
