@@ -1678,18 +1678,24 @@ hgroup.yellow-wrapper-small::after {
 }
 
 /*hover-fader*/
-
-#bios li {
+#bios {
+	float:right;
+	width: 667px;
+}
+#bios figure {
 	float:left;
-	height:147px;
 	margin-left:19px;
 	margin-bottom:19px;
 	overflow: hidden;
-	width:147px;
+}
+#bios figcaption {
+	font-weight: bold;
 }
 
 #bios li img {
+	height:147px;
 	position: absolute;
+	width:147px;
 }
 
 #leadership li {
