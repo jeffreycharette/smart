@@ -1200,7 +1200,7 @@ ul.comments {
 	margin-right: 22px;
 	width: 480px;
 }
-.full {
+.full, .summary {
 	clear: both;
 	margin-bottom: 37px;
 	overflow: auto;
@@ -1208,6 +1208,11 @@ ul.comments {
 }
 .full .half {
 	width: 460px;
+}
+
+.summary p {
+	margin-bottom: 19px;
+	width:648px;
 }
 
 /* latest section */
