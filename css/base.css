@@ -1691,6 +1691,9 @@ hgroup.yellow-wrapper-small::after {
 }
 #bios figcaption {
 	font-weight: bold;
+	font-size: 1em;
+	position: relative;
+	top: 147px;
 }
 
 #bios img {
