@@ -487,9 +487,7 @@ ul.category {
 /* industries navigation */
 
 ul.industries {
-	float: right;
 	list-style-type: none;
-	width: 495px;
 }
 .industries li {
 	float:left;
@@ -1209,7 +1207,6 @@ ul.comments {
 .full .half {
 	width: 460px;
 }
-
 .summary p {
 	margin-bottom: 19px;
 	width:648px;
