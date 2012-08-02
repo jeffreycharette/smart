@@ -152,20 +152,24 @@ padding:0;
 float:left;
 }
 .right {
-float:right;
+float: right;
 }
 .clearboth {
 clear: both;
 }
 .strong {
-font-weight:bold;
+font-weight: bold;
 }
 .italic {
-font-style:italic;
+font-style: italic;
 }
 .sup {
 vertical-align:top;
 font:.7em/1.9em "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.clear-auto {
+	clear: both;
+	overflow: auto;
 }
 
 /* COLORS */
@@ -912,6 +916,7 @@ article.small h2,
 }
 h2.allcaps {
 font-family: 'Helvetica Neue', 'HelveticaNeue', Arial, Helvetica, sans-serif;
+text-transform: none;
 }
 #grid .small h2 {
 	font-size: 1em;
@@ -1657,6 +1662,11 @@ hgroup.yellow-wrapper-small::after {
 	font-weight: bold;
 	padding-left: 19px;
 	width: 150px;
+}
+.border-padding {
+	clear: both;
+	overflow: auto;
+	padding: 0 15px;
 }
 #detail .pullquote {
 	background: none;
