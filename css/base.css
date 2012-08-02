@@ -2204,7 +2204,7 @@ footer .social li {
 	http://dblog.com.au/general/jquery-plugin-custom-styled-select-input-wkeyboard-interaction/
 	modified by Jeff Charette - wearecharette.com
 */
-#select-filter_iconselect {
+#select-filter_iconselect, #select-archive_iconselect {
 	margin-right: 11px;
 }
 #industry_iconselect, 
