@@ -497,7 +497,7 @@ ul.industries {
 .industries li a:visited,
 .industries li a:active {
 	color: #333333;
-	font-size: .875em;
+	font-size: .8125em;
 	font-weight: bold;
 	display: block;
 }
