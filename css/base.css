@@ -870,6 +870,7 @@ article.small h2,
 	font-family: 'Helvetica Neue', 'HelveticaNeue', Arial, Helvetica, sans-serif;
 	font-size: .875em;
 	font-weight: bold;
+	line-height: 1.25em;
 	margin-left: 3px;
 	padding-bottom: 9px;
 	padding-top: 4px;
@@ -912,7 +913,7 @@ article.small h2,
 	color:#333333;
 	font-size: 1em;
 	font-weight: bold;
-	line-height: 1em;
+	line-height: 1.25em;
 	padding: 3px 0 10px;
 	text-shadow: none;
 	text-transform: uppercase;
@@ -959,7 +960,7 @@ text-transform: none;
 	margin-right: 0;
 }
 #detail .grid-four img, .grid-four img {
-	margin: 0px 15px 15px 0px;
+	margin: 0px 13px 15px 2px;
 }
 #detail .grid-four img.last, .grid-four img.last  {
 	margin-right: 0;
