@@ -221,7 +221,7 @@ $(function() {
       o.time = t('<span class="tweet_time"><a href="{tweet_url}" title="view tweet on twitter">{tweet_relative_time}</a></span>', o);
       o.text = t('<span class="tweet_text">{tweet_text_fancy}</span>', o);
       o.reply_action = t('<a class="tweet_action tweet_reply" href="{reply_url}">reply</a>', o);
-      o.retweet_action = t('<a class="tweet_action tweet_retweet" href="{retweet_url}"><img src="css/images/bg-retweet.gif" width="20" height="12" alt="Retweet"></a>', o);
+      o.retweet_action = t('<a class="tweet_action tweet_retweet" href="{retweet_url}"><img src="css/images/bg-retweet.png" width="20" height="12" alt="Retweet"></a>', o);
       o.favorite_action = t('<a class="tweet_action tweet_favorite" href="{favorite_url}">favorite</a>', o);
       return o;
     }
