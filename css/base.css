@@ -1754,9 +1754,8 @@ hgroup.yellow-wrapper-small::after {
 }
 article.news {
 	float: none;
-	margin-bottom: 0 0 31px 0;
+	margin: 0 0 31px 0;
 	width: auto;
-	margin-left: 0px;
 }
 article.news h2 {
 	font-size: 1.8em;
