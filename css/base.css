@@ -212,7 +212,7 @@ a.external:visited,
 a.external:active,
 a.external:hover,
 a.external:focus {
-	background: url('images/bg-external-link.png') no-repeat 50% 100%;
+	background: url('images/bg-external-link.png') no-repeat 100% 50%;
 	padding-right: 25px;
 }
 
@@ -1785,11 +1785,11 @@ article.news iframe.video {
 	padding-right: 0;
 }
 
-.media a,
-.media a:visited,
-.media a:active,
-.media a:hover,
-.media a:focus {
+.subnav li.media a,
+.subnav li.media a:visited,
+.subnav li.media a:active,
+.subnav li.media a:hover,
+.subnav li.media a:focus {
 	background: url('images/bg-mailto.png') no-repeat 50% 0;
 	padding-left: 25px;
 }
