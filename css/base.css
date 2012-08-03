@@ -1563,7 +1563,7 @@ hgroup.yellow-wrapper, hgroup.yellow-wrapper-small {
 }
 hgroup.orange-wrapper-small, hgroup.green-wrapper-small, hgroup.yellow-wrapper-small {
 	height: 38px;
-	margin-left: -4px;
+	margin-left: -5px;
 	overflow: visible !important;
 	position: absolute;
 	width: 10px;
