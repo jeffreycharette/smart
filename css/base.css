@@ -1790,8 +1790,8 @@ article.news iframe.video {
 .subnav li.media a:active,
 .subnav li.media a:hover,
 .subnav li.media a:focus {
-	background: url('images/bg-mailto.png') no-repeat 0 50%;
-	padding-left: 25px;
+	background: url('images/bg-mailto.png') no-repeat 100% 49%;
+	padding-right: 25px;
 }
 
 /* controls */
