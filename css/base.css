@@ -1850,6 +1850,14 @@ article.news iframe.video {
 	margin-left: 19px;
 }
 
+.left-column li {
+	width:314px;
+	float: left;
+	margin-bottom: 0px;
+	margin-top: 20px;
+	margin-right:19px;
+}
+
 .section-column {
 	width:314px;
 	float: left;
