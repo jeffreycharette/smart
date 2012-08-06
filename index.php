@@ -542,14 +542,14 @@ else {
 											$o++;
 											list($trash,$opts)=explode(":",$vv['type']);
 											preg_match("/original\.(.*?)\?/is",$vv['value'],$matches);
-											$imgs="<br /><div class=\"images-box\"><label for=\"pictures\">".$vv['name']."</label><ul class=\"imglist\" id=\"item_".$kk."\"><li><a href=\"/uploaded/images/".$kk."/full.".$matches[1]."?".mt_rand()."\"><img src=\"/uploaded/images/".$kk."/100x100.".$matches[1]."?".mt_rand()."\" width=\"100\" height=\"100\" /></a></li></ul><a id=\"images_".$kk."_".$opts."\" class=\"upload\" href=\"#\" title=\"Click to upload\">upload</a></div>";
+											$imgs="<br /><div class=\"images-box\"><label for=\"pictures\">".$vv['name']."</label><ul class=\"imglist\" id=\"item_".$kk."\"><li><a href=\"/uploaded/images/".$kk."/full.".$matches[1]."?".mt_rand()."\"><img src=\"/uploaded/images/".$kk."/147x147.".$matches[1]."?".mt_rand()."\" width=\"147\" height=\"147\" /></a></li></ul><a id=\"images_".$kk."_".$opts."\" class=\"upload\" href=\"#\" title=\"Click to upload\">upload</a></div>";
 											if (stristr($editortpl,"{".$vv['name']."}")) {
 												$editortpl=str_replace("{".$vv['name']."}",$imgs,$editortpl);
 											}
 											elseif (strlen($vv['name']) > 1) {
 												$editortpl=$editortpl.$imgs;
 											}
-											$arr[$k]['tpl']=str_replace("{small_image}","<img src=\"/uploaded/images/".$kk."/255x188.".$matches[1]."?".mt_rand()."\" width=\"255\" height=\"188\" />",$arr[$k]['tpl']);
+											$arr[$k]['tpl']=str_replace("{small_image}","<img src=\"/uploaded/images/".$kk."/147x147.".$matches[1]."?".mt_rand()."\" width=\"147\" height=\"147\" />",$arr[$k]['tpl']);
 										}
 										elseif (stristr($vv['type'],"limit")) {
 											$l++;
@@ -926,7 +926,7 @@ else {
 						$o++;
 						preg_match("/original\.(.*?)\?/is",$val['value'],$matches);
 						list($trash,$opts)=explode(":",$val['type']);
-						$value['editor'].="<br /><div class=\"images-box\"><label for=\"pictures\">".$val['name']."</label><ul class=\"imglist\" id=\"item_".$key."\"><li><a href=\"/uploaded/images/".$key."/full.".$matches[1]."?".mt_rand()."\"><img src=\"/uploaded/images/".$key."/100x100.".$matches[1]."?".mt_rand()."\" width=\"100\" height=\"100\" /></a></li></ul><a id=\"images_".$key."_".$opts."\" class=\"upload\" href=\"#\" title=\"Click to upload\">upload</a></div>";
+						$value['editor'].="<br /><div class=\"images-box\"><label for=\"pictures\">".$val['name']."</label><ul class=\"imglist\" id=\"item_".$key."\"><li><a href=\"/uploaded/images/".$key."/full.".$matches[1]."?".mt_rand()."\"><img src=\"/uploaded/images/".$key."/147x147.".$matches[1]."?".mt_rand()."\" width=\"147\" height=\"147\" /></a></li></ul><a id=\"images_".$key."_".$opts."\" class=\"upload\" href=\"#\" title=\"Click to upload\">upload</a></div>";
 					}
 					elseif (stristr($val['type'],"limit")) {
 						$l++;
@@ -1287,7 +1287,7 @@ function parseRequest($read_db) {
 					//Get Image size info
 					list($width, $height, $image_type) = getimagesize($filename);
 				}
-				if ($h=="237") {
+				if ($h=="147") {
 					$value="<a class=\"lightbox\" href=\"".str_replace("original","full",$filename)."?".mt_rand()."\"><img src=\"".$filename."?".mt_rand()."\" width=\"".$width."\" height=\"".$height."\" /></a>";
 				}
 				else {
@@ -1296,8 +1296,8 @@ function parseRequest($read_db) {
 				if (is_numeric($id) && $id > 0) {
 					$result = $read_db->query("INSERT INTO entities (id,name,type,value) VALUES ('".$id."','images','image:".$options."','".$value."') ON DUPLICATE KEY UPDATE value='".$value."'");
 				}
-				$img=str_replace("original","100x100",$filename);
-				echo "<li><a href=\"".$filename."?".mt_rand()."\"><img src=\"".$img."?".mt_rand()."\" width=\"100\" height=\"100\" /></a></li>";
+				$img=str_replace("original","147x147",$filename);
+				echo "<li><a href=\"".$filename."?".mt_rand()."\"><img src=\"".$img."?".mt_rand()."\" width=\"147\" height=\"147\" /></a></li>";
 				exit;
 			}
 			$errors['return_val']=$return_val;
@@ -1430,14 +1430,14 @@ function imageHandler() {
 							$tmp_name = $_FILES["pictures"]["tmp_name"][$key];
 							$name = sanitize_filename($_FILES["pictures"]["name"][$key]);
 							list($name,$extension)=explode(".",$name);
-							$name = $dir_id."/original.".$extension;
+							$name = $dir_id."/full.".$extension;
 							
 							if (exif_imagetype($tmp_name)) {
 								if ($width=="" && $height=="") {
 									$returnval=resize($tmp_name,982,648,$name);
 								}
 								else {
-									if ($height=="237") {
+									if ($height=="147") {
 										//should be using $extra
 										$returnval=resize($tmp_name,$width,$height,$name);
 									}
