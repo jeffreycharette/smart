@@ -1434,7 +1434,7 @@ function imageHandler() {
 							
 							if (exif_imagetype($tmp_name)) {
 								if ($width=="" && $height=="") {
-									$returnval=resize($tmp_name,950,535,$name);
+									$returnval=resize($tmp_name,982,648,$name);
 								}
 								else {
 									if ($height=="237") {
@@ -1444,21 +1444,45 @@ function imageHandler() {
 									else {
 										$returnval=resize($tmp_name,$width,$height,$name,FALSE,TRUE);
 									}
-									$returnval=resize($tmp_name,800,600,$dir_id."/full.".$extension);
+									$returnval=resize($tmp_name,982,648,$dir_id."/full.".$extension);
 								}
 								$x++;
 								if (is_array($returnval)) {
 									$error=$returnval['message_e'];
 								}
 								else {
-									$returnval=resize($tmp_name,100,100,$dir_id."/100x100.".$extension,TRUE);
+									$returnval=resize($tmp_name,147,147,$dir_id."/147x147.".$extension,TRUE);
 									if (is_array($returnval)) {
 										$error=$returnval['message_e'];
 									}
 									else {
-										$returnval=resize($tmp_name,255,188,$dir_id."/255x188.".$extension,FALSE,TRUE);
+										$returnval=resize($tmp_name,314,314,$dir_id."/314x314.".$extension,FALSE,TRUE);
 										if (is_array($returnval)) {
 											$error=$returnval['message_e'];
+										}
+										else {
+											$returnval=resize($tmp_name,481,481,$dir_id."/481x481.".$extension,TRUE);
+											if (is_array($returnval)) {
+												$error=$returnval['message_e'];
+											}
+											else {
+												$returnval=resize($tmp_name,314,481,$dir_id."/314x481.".$extension,FALSE,TRUE);
+												if (is_array($returnval)) {
+													$error=$returnval['message_e'];
+												}
+												else {
+													$returnval=resize($tmp_name,648,481,$dir_id."/648x481.".$extension,TRUE);
+													if (is_array($returnval)) {
+														$error=$returnval['message_e'];
+													}
+													else {
+														$returnval=resize($tmp_name,982,481,$dir_id."/982x481.".$extension,FALSE,TRUE);
+														if (is_array($returnval)) {
+															$error=$returnval['message_e'];
+														}
+													}
+												}
+											}
 										}
 									}
 								}
