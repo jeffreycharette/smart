@@ -242,9 +242,10 @@ $(".tweet").tweet({
 	  }
 	);
 	
-	/* localScroll (capabilites page / all inline links) */
+	/* localScroll (capabilities page / all inline links) */
 	$.localScroll.hash();
 	$.localScroll({hash:true});
+	$('.left-column ul li:odd').css({'margin-right':0});
 	
 	/* search results */
 	$('#search-results ol li:odd').addClass('odd');
