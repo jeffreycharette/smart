@@ -542,7 +542,7 @@ else {
 											$o++;
 											list($trash,$opts)=explode(":",$vv['type']);
 											preg_match("/original\.(.*?)\?/is",$vv['value'],$matches);
-											$imgs="<br /><div class=\"images-box\"><label for=\"pictures\">".$vv['name']."</label><ul class=\"imglist\" id=\"item_".$kk."\"><li><a href=\"/uploaded/images/".$kk."/original.".$matches[1]."?".mt_rand()."\"><img src=\"/uploaded/images/".$kk."/100x100.".$matches[1]."?".mt_rand()."\" width=\"100\" height=\"100\" /></a></li></ul><a id=\"images_".$kk."_".$opts."\" class=\"upload\" href=\"#\" title=\"Click to upload\">upload</a></div>";
+											$imgs="<br /><div class=\"images-box\"><label for=\"pictures\">".$vv['name']."</label><ul class=\"imglist\" id=\"item_".$kk."\"><li><a href=\"/uploaded/images/".$kk."/full.".$matches[1]."?".mt_rand()."\"><img src=\"/uploaded/images/".$kk."/100x100.".$matches[1]."?".mt_rand()."\" width=\"100\" height=\"100\" /></a></li></ul><a id=\"images_".$kk."_".$opts."\" class=\"upload\" href=\"#\" title=\"Click to upload\">upload</a></div>";
 											if (stristr($editortpl,"{".$vv['name']."}")) {
 												$editortpl=str_replace("{".$vv['name']."}",$imgs,$editortpl);
 											}
@@ -926,7 +926,7 @@ else {
 						$o++;
 						preg_match("/original\.(.*?)\?/is",$val['value'],$matches);
 						list($trash,$opts)=explode(":",$val['type']);
-						$value['editor'].="<br /><div class=\"images-box\"><label for=\"pictures\">".$val['name']."</label><ul class=\"imglist\" id=\"item_".$key."\"><li><a href=\"/uploaded/images/".$key."/original.".$matches[1]."?".mt_rand()."\"><img src=\"/uploaded/images/".$key."/100x100.".$matches[1]."?".mt_rand()."\" width=\"100\" height=\"100\" /></a></li></ul><a id=\"images_".$key."_".$opts."\" class=\"upload\" href=\"#\" title=\"Click to upload\">upload</a></div>";
+						$value['editor'].="<br /><div class=\"images-box\"><label for=\"pictures\">".$val['name']."</label><ul class=\"imglist\" id=\"item_".$key."\"><li><a href=\"/uploaded/images/".$key."/full.".$matches[1]."?".mt_rand()."\"><img src=\"/uploaded/images/".$key."/100x100.".$matches[1]."?".mt_rand()."\" width=\"100\" height=\"100\" /></a></li></ul><a id=\"images_".$key."_".$opts."\" class=\"upload\" href=\"#\" title=\"Click to upload\">upload</a></div>";
 					}
 					elseif (stristr($val['type'],"limit")) {
 						$l++;
