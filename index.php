@@ -541,7 +541,7 @@ else {
 										elseif (stristr($vv['type'],"image")) {
 											$o++;
 											list($trash,$opts)=explode(":",$vv['type']);
-											preg_match("/original\.(.*?)\?/is",$vv['value'],$matches);
+											preg_match("/full\.(.*?)\?/is",$vv['value'],$matches);
 											$imgs="<br /><div class=\"images-box\"><label for=\"pictures\">".$vv['name']."</label><ul class=\"imglist\" id=\"item_".$kk."\"><li><a href=\"/uploaded/images/".$kk."/full.".$matches[1]."?".mt_rand()."\"><img src=\"/uploaded/images/".$kk."/147x147.".$matches[1]."?".mt_rand()."\" width=\"147\" height=\"147\" /></a></li></ul><a id=\"images_".$kk."_".$opts."\" class=\"upload\" href=\"#\" title=\"Click to upload\">upload</a></div>";
 											if (stristr($editortpl,"{".$vv['name']."}")) {
 												$editortpl=str_replace("{".$vv['name']."}",$imgs,$editortpl);
@@ -924,7 +924,7 @@ else {
 					}
 					elseif (stristr($val['type'],"image")) {
 						$o++;
-						preg_match("/original\.(.*?)\?/is",$val['value'],$matches);
+						preg_match("/full\.(.*?)\?/is",$val['value'],$matches);
 						list($trash,$opts)=explode(":",$val['type']);
 						$value['editor'].="<br /><div class=\"images-box\"><label for=\"pictures\">".$val['name']."</label><ul class=\"imglist\" id=\"item_".$key."\"><li><a href=\"/uploaded/images/".$key."/full.".$matches[1]."?".mt_rand()."\"><img src=\"/uploaded/images/".$key."/147x147.".$matches[1]."?".mt_rand()."\" width=\"147\" height=\"147\" /></a></li></ul><a id=\"images_".$key."_".$opts."\" class=\"upload\" href=\"#\" title=\"Click to upload\">upload</a></div>";
 					}
