@@ -202,7 +202,7 @@ jQuery.fn.extend({
                 tooltip: "Click to upload"
             });
             $('.imglist a').lightBox();
-						$('#jquery-lightbox').live('click', function(e) {
+						$('#jquery-lightbox').live('open', function(e) {
 							$(this).find('#lightbox-nav').hide();
 							$(this).find('#lightbox-image-details-currentNumber').html('<a class="crop-square" title="1:1" href="#">crop</a> <a class="crop-rectangle" title="4:3" href="#">crop</a> <a class="crop-rectangle-wide" title="16:9" href="#">crop</a>');
 							var thisBox = $(this),
@@ -225,6 +225,7 @@ jQuery.fn.extend({
 								croppedBox.update();
 							});
 							thisBox.find('.crop-done').click( function(e) {
+								thisBox.find('#lightbox-image-details-currentNumber').html('<a class="crop-square" title="1:1" href="#">crop</a> <a class="crop-rectangle" title="4:3" href="#">crop</a> <a class="crop-rectangle-wide" title="16:9" href="#">crop</a>');
 								var selection = croppedBox.getSelection();
 								alert('width: ' + selection.width + '; height: ' + selection.height);
 							});
