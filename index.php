@@ -926,7 +926,7 @@ else {
 						$o++;
 						preg_match("/original\.(.*?)\?/is",$val['value'],$matches);
 						list($trash,$opts)=explode(":",$val['type']);
-						$value['editor'].="<br /><div class=\"images-box\"><label for=\"pictures\">".$val['name']."</label><ul class=\"imglist\" id=\"item_".$key."\"><li><a href=\"/uploaded/images/".$key."/full.".$matches[1]."?".mt_rand()."\"><img src=\"/uploaded/images/".$key."/100x100.".$matches[1]."?".mt_rand()."\" width=\"100\" height=\"100\" /></a></li></ul><a id=\"images_".$key."_".$opts."\" class=\"upload\" href=\"#\" title=\"Click to upload\">upload</a></div>";
+						$value['editor'].="<br /><div class=\"images-box\"><label for=\"pictures\">".$val['name']."</label><ul class=\"imglist\" id=\"item_".$key."\"><li><a href=\"/uploaded/images/".$key."/full.".$matches[1]."?".mt_rand()."\"><img src=\"/uploaded/images/".$key."/147x147.".$matches[1]."?".mt_rand()."\" width=\"147\" height=\"147\" /></a></li></ul><a id=\"images_".$key."_".$opts."\" class=\"upload\" href=\"#\" title=\"Click to upload\">upload</a></div>";
 					}
 					elseif (stristr($val['type'],"limit")) {
 						$l++;
