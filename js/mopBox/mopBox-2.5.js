@@ -219,14 +219,13 @@ jQuery.fn.extend({
 								croppedBox.setOptions({ aspectRatio: '4:3' });
 								croppedBox.update();
 							});
-							thisBox.find('.crop-rectangle').click( function(e) {
+							thisBox.find('.crop-rectangle-wide').click( function(e) {
 								croppedBox.setOptions({ aspectRatio: '16:9' });
 								croppedBox.update();
 							});
 							thisBox.find('.crop-done').click( function(e) {
-								croppedBox.getSelection( function(selection) {
-									alert('width: ' + selection.width + '; height: ' + selection.height);
-								});
+								var selection = croppedBox.getSelection();
+								alert('width: ' + selection.width + '; height: ' + selection.height);
 							});
 						});
         });
