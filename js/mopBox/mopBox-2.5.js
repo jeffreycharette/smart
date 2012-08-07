@@ -219,6 +219,7 @@ jQuery.fn.extend({
 								return false;
 							});
 							thisBox.find('.crop-square').click( function(e) {
+								console.log('what');
 								var croppedBox = thisBox.find('#lightbox-image').imgAreaSelect({
    								handles: true,
 									aspectRatio: '1:1',
