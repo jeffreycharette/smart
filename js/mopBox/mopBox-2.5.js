@@ -204,10 +204,10 @@ jQuery.fn.extend({
             $('.imglist a').lightBox();
 						$('#jquery-lightbox').live('click', function(el) {
 							$(this).find('#lightbox-nav').hide();
-							$(this).find('#lightbox-image-details-currentNumber').html('<a class="crop-square" title="1:1" href="#">Crop</a> <a class="crop-rectangle" title="4:3" href="#">Crop</a> <a class="crop-wide-rectangle" title="16:9" href="#">Crop</a>');
-							$(this).find('.crop-square').click( function() {
+							$(this).find('#lightbox-image-details-currentNumber').html('<a class="crop-square" title="1:1" href="#">crop</a> <a class="crop-rectangle" title="4:3" href="#">crop</a> <a class="crop-wide-rectangle" title="16:9" href="#">crop</a>');
+							$(this).find('.crop-square').click( function(e) {
 								var thisBox = $(this).parent('#jquery-lightbox');
-								thisBox.find('#lightbox-image-details-currentNumber').html('<a class="crop-done" title="" href="#">Done</a>');
+								thisBox.find('#lightbox-image-details-currentNumber').html('<a class="crop-done" title="" href="#">done</a>');
 								thisBox.find('#lightbox-image').imgAreaSelect({
 						        handles: true,
 										aspectRatio: '1:1',
@@ -215,10 +215,12 @@ jQuery.fn.extend({
 										  alert('width: ' + selection.width + '; height: ' + selection.height);
 										}
 						    });
+								e.preventDefault();
+								return false;
 							});
-							$(this).find('.crop-rectangle').click( function() {
+							$(this).find('.crop-rectangle').click( function(e) {
 								var thisBox = $(this).parent('#jquery-lightbox');
-								thisBox.find('#lightbox-image-details-currentNumber').html('<a class="crop-done" title="" href="#">Done</a>');
+								thisBox.find('#lightbox-image-details-currentNumber').html('<a class="crop-done" title="" href="#">done</a>');
 								thisBox.find('#lightbox-image').imgAreaSelect({
 						        handles: true,
 										aspectRatio: '4:3',
@@ -226,10 +228,12 @@ jQuery.fn.extend({
 										  alert('width: ' + selection.width + '; height: ' + selection.height);
 										}
 						    });
+								e.preventDefault();
+								return false;
 							});
-							$(this).find('.crop-rectangle-wide').click( function() {
+							$(this).find('.crop-rectangle-wide').click( function(e) {
 								var thisBox = $(this).parent('#jquery-lightbox');
-								thisBox.find('#lightbox-image-details-currentNumber').html('<a class="crop-done" title="" href="#">Done</a>');
+								thisBox.find('#lightbox-image-details-currentNumber').html('<a class="crop-done" title="" href="#">done</a>');
 								thisBox.find('#lightbox-image').imgAreaSelect({
 						        handles: true,
 										aspectRatio: '16:9',
@@ -237,6 +241,8 @@ jQuery.fn.extend({
 										  alert('width: ' + selection.width + '; height: ' + selection.height);
 										}
 						    });
+								e.preventDefault();
+								return false;
 							});
 						});
         });
