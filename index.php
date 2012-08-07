@@ -542,7 +542,7 @@ else {
 											$o++;
 											list($trash,$opts)=explode(":",$vv['type']);
 											preg_match("/original\.(.*?)\?/is",$vv['value'],$matches);
-											$imgs="<br /><div class=\"images-box\"><label for=\"pictures\">".$vv['name']."</label><ul class=\"imglist\" id=\"item_".$kk."\"><li><a href=\"/uploaded/images/".$kk."/full.".$matches[1]."?".mt_rand()."\"><img src=\"/uploaded/images/".$kk."/100x100.".$matches[1]."?".mt_rand()."\" width=\"100\" height=\"100\" /></a></li></ul><a id=\"images_".$kk."_".$opts."\" class=\"upload\" href=\"#\" title=\"Click to upload\">upload</a></div>";
+											$imgs="<br /><div class=\"images-box\"><label for=\"pictures\">".$vv['name']."</label><ul class=\"imglist\" id=\"item_".$kk."\"><li><a href=\"/uploaded/images/".$kk."/full.".$matches[1]."?".mt_rand()."\"><img src=\"/uploaded/images/".$kk."/147x147.".$matches[1]."?".mt_rand()."\" width=\"147\" height=\"147\" /></a></li></ul><a id=\"images_".$kk."_".$opts."\" class=\"upload\" href=\"#\" title=\"Click to upload\">upload</a></div>";
 											if (stristr($editortpl,"{".$vv['name']."}")) {
 												$editortpl=str_replace("{".$vv['name']."}",$imgs,$editortpl);
 											}
