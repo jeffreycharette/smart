@@ -202,8 +202,8 @@ jQuery.fn.extend({
                 tooltip: "Click to upload"
             });
             $('.imglist a').lightBox();
-						$('#lightbox-image').live('click', function(el) {
-							$(this).imgAreaSelect({
+						$('#jquery-lightbox').live('click', function(el) {
+							$(this).find('#lightbox-image').imgAreaSelect({
 					        handles: true,
 					        onSelectEnd: function (img, selection) {
 									  alert('width: ' + selection.width + '; height: ' + selection.height);
