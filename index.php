@@ -1296,8 +1296,8 @@ function parseRequest($read_db) {
 				if (is_numeric($id) && $id > 0) {
 					$result = $read_db->query("INSERT INTO entities (id,name,type,value) VALUES ('".$id."','images','image:".$options."','".$value."') ON DUPLICATE KEY UPDATE value='".$value."'");
 				}
-				$img=str_replace("original","100x100",$filename);
-				echo "<li><a href=\"".$filename."?".mt_rand()."\"><img src=\"".$img."?".mt_rand()."\" width=\"100\" height=\"100\" /></a></li>";
+				$img=str_replace("original","147x147",$filename);
+				echo "<li><a href=\"".$filename."?".mt_rand()."\"><img src=\"".$img."?".mt_rand()."\" width=\"147\" height=\"147\" /></a></li>";
 				exit;
 			}
 			$errors['return_val']=$return_val;
