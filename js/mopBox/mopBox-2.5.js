@@ -206,8 +206,9 @@ jQuery.fn.extend({
 							$(this).find('#lightbox-nav').hide();
 							$(this).find('#lightbox-image-details-currentNumber').html('<a class="crop-square" title="1:1" href="#">Crop</a> <a class="crop-rectangle" title="4:3" href="#">Crop</a> <a class="crop-wide-rectangle" title="16:9" href="#">Crop</a>');
 							$(this).find('.crop-square').click( function() {
-								$(this).find('#lightbox-image-details-currentNumber').html('<a class="crop-done" title="" href="#">Done</a>');
-								$(this).parent('#jquery-lightbox').find('#lightbox-image').imgAreaSelect({
+								var thisBox = $(this).parent('#jquery-lightbox');
+								thisBox.find('#lightbox-image-details-currentNumber').html('<a class="crop-done" title="" href="#">Done</a>');
+								thisBox.find('#lightbox-image').imgAreaSelect({
 						        handles: true,
 										aspectRatio: '1:1',
 						        onSelectEnd: function (img, selection) {
@@ -216,8 +217,9 @@ jQuery.fn.extend({
 						    });
 							});
 							$(this).find('.crop-rectangle').click( function() {
-								$(this).find('#lightbox-image-details-currentNumber').html('<a class="crop-done" title="" href="#">Done</a>');
-								$(this).parent('#jquery-lightbox').find('#lightbox-image').imgAreaSelect({
+								var thisBox = $(this).parent('#jquery-lightbox');
+								thisBox.find('#lightbox-image-details-currentNumber').html('<a class="crop-done" title="" href="#">Done</a>');
+								thisBox.find('#lightbox-image').imgAreaSelect({
 						        handles: true,
 										aspectRatio: '4:3',
 						        onSelectEnd: function (img, selection) {
@@ -226,8 +228,9 @@ jQuery.fn.extend({
 						    });
 							});
 							$(this).find('.crop-rectangle-wide').click( function() {
-								$(this).find('#lightbox-image-details-currentNumber').html('<a class="crop-done" title="" href="#">Done</a>');
-								$(this).parent('#jquery-lightbox').find('#lightbox-image').imgAreaSelect({
+								var thisBox = $(this).parent('#jquery-lightbox');
+								thisBox.find('#lightbox-image-details-currentNumber').html('<a class="crop-done" title="" href="#">Done</a>');
+								thisBox.find('#lightbox-image').imgAreaSelect({
 						        handles: true,
 										aspectRatio: '16:9',
 						        onSelectEnd: function (img, selection) {
