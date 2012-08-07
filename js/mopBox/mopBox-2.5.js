@@ -208,7 +208,8 @@ jQuery.fn.extend({
 							var thisBox = $(this),
 									croppedBox = thisBox.find('#lightbox-image').imgAreaSelect({
 					        								handles: true,
-																	aspectRatio: '1:1'
+																	aspectRatio: '1:1',
+																	instance: true
 					    									});
 							thisBox.find('.crop-square, .crop-rectangle, .crop-rectangle-wide').click( function(e) {
 								thisBox.find('#lightbox-image-details-currentNumber').html('<a class="crop-done" title="" href="#">done</a>');
