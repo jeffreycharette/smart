@@ -211,6 +211,7 @@ jQuery.fn.extend({
 																	aspectRatio: '1:1',
 																	instance: true
 					    									});
+							console.log(croppedBox);
 							thisBox.find('.crop-square, .crop-rectangle, .crop-rectangle-wide').click( function(e) {
 								thisBox.find('#lightbox-image-details-currentNumber').html('<a class="crop-done" title="" href="#">done</a>');
 								e.preventDefault();
