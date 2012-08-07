@@ -203,6 +203,7 @@ jQuery.fn.extend({
             });
             $('.imglist a').lightBox();
 						$('#jquery-lightbox').live('click', function(el) {
+							$(this).find('#lightbox-nav').hide();
 							$(this).find('#lightbox-image').imgAreaSelect({
 					        handles: true,
 					        onSelectEnd: function (img, selection) {
