@@ -206,8 +206,15 @@ jQuery.fn.extend({
 							$(this).find('#lightbox-nav').hide();
 							$(this).find('#lightbox-image-details-currentNumber').html('<a class="crop-square" title="1:1" href="#">crop</a> <a class="crop-rectangle" title="4:3" href="#">crop</a> <a class="crop-rectangle-wide" title="16:9" href="#">crop</a>');
 							var thisBox = $(this);
-							thisBox.find('.crop-square, .crop-rectangle, .crop-rectangle-wide').click( function(e) {
+							thisBox.find('.crop-square, .crop-rectangle, .crop-rectangle-wide').one('click', function(e) {
 								thisBox.find('#lightbox-image-details-currentNumber').html('<a class="crop-done" title="" href="#">done</a>');
+								thisBox.find('.crop-done').click( function(e) {
+									console.log('in');
+									thisBox.find('#lightbox-image-details-currentNumber').html('<a class="crop-square" title="1:1" href="#">crop</a> <a class="crop-rectangle" title="4:3" href="#">crop</a> <a class="crop-rectangle-wide" title="16:9" href="#">crop</a>');
+									var selection = croppedBox.getSelection();
+									console.log(selection);
+									alert('width: ' + selection.width + '; height: ' + selection.height);
+								});
 								e.preventDefault();
 								return false;
 							});
@@ -231,13 +238,6 @@ jQuery.fn.extend({
 									aspectRatio: '16:9',
 									instance: true
 								});
-							});
-							thisBox.find('.crop-done').click( function(e) {
-								console.log('in');
-								thisBox.find('#lightbox-image-details-currentNumber').html('<a class="crop-square" title="1:1" href="#">crop</a> <a class="crop-rectangle" title="4:3" href="#">crop</a> <a class="crop-rectangle-wide" title="16:9" href="#">crop</a>');
-								var selection = croppedBox.getSelection();
-								console.log(selection);
-								alert('width: ' + selection.width + '; height: ' + selection.height);
 							});
 						});
         });
