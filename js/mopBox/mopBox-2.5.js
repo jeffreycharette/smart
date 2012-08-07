@@ -204,39 +204,29 @@ jQuery.fn.extend({
             $('.imglist a').lightBox();
 						$('#jquery-lightbox').live('click', function(e) {
 							$(this).find('#lightbox-nav').hide();
-							$(this).find('#lightbox-image-details-currentNumber').html('<a class="crop-square" title="1:1" href="#">crop</a> <a class="crop-rectangle" title="4:3" href="#">crop</a> <a class="crop-wide-rectangle" title="16:9" href="#">crop</a>');
-							var thisBox = $(this);
+							$(this).find('#lightbox-image-details-currentNumber').html('<a class="crop-square" title="1:1" href="#">crop</a> <a class="crop-rectangle" title="4:3" href="#">crop</a> <a class="crop-rectangle-wide" title="16:9" href="#">crop</a>');
+							var thisBox = $(this),
+									croppedBox = thisBox.find('#lightbox-image').imgAreaSelect({
+					        								handles: true,
+																	aspectRatio: '1:1'
+					    									});
 							thisBox.find('.crop-square, .crop-rectangle, .crop-rectangle-wide').click( function(e) {
 								thisBox.find('#lightbox-image-details-currentNumber').html('<a class="crop-done" title="" href="#">done</a>');
 								e.preventDefault();
 								return false;
 							});
-							thisBox.find('.crop-square').click( function(e) {
-								thisBox.find('#lightbox-image').imgAreaSelect({
-						        handles: true,
-										aspectRatio: '1:1',
-						        onSelectEnd: function (img, selection) {
-										  alert('width: ' + selection.width + '; height: ' + selection.height);
-										}
-						    });
+							thisBox.find('.crop-rectangle').click( function(e) {
+								croppedBox.setOptions({ aspectRatio: '4:3' });
+								croppedBox.update();
 							});
 							thisBox.find('.crop-rectangle').click( function(e) {
-								thisBox.find('#lightbox-image').imgAreaSelect({
-						        handles: true,
-										aspectRatio: '4:3',
-						        onSelectEnd: function (img, selection) {
-										  alert('width: ' + selection.width + '; height: ' + selection.height);
-										}
-						    });
+								croppedBox.setOptions({ aspectRatio: '16:9' });
+								croppedBox.update();
 							});
-							thisBox.find('.crop-rectangle-wide').click( function(e) {
-								thisBox.find('#lightbox-image').imgAreaSelect({
-						        handles: true,
-										aspectRatio: '16:9',
-						        onSelectEnd: function (img, selection) {
-										  alert('width: ' + selection.width + '; height: ' + selection.height);
-										}
-						    });
+							thisBox.find('.crop-done').click( function(e) {
+								croppedBox.getSelection( function(selection) {
+									alert('width: ' + selection.width + '; height: ' + selection.height);
+								});
 							});
 						});
         });
