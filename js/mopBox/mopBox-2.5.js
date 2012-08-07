@@ -201,7 +201,13 @@ jQuery.fn.extend({
                 submit: 'Upload',
                 tooltip: "Click to upload"
             });
-            //$('.imglist a').lightBox();
+            $('.imglist a').lightBox();
+						$('.imglist a').imgAreaSelect({
+						        handles: true,
+						        onSelectEnd: function (img, selection) {
+										  alert('width: ' + selection.width + '; height: ' + selection.height);
+										}
+						    });
         });
         mpBxF = {
             init: function () {
