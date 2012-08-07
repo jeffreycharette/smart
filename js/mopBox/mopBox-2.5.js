@@ -206,13 +206,12 @@ jQuery.fn.extend({
 							$(this).find('#lightbox-nav').hide();
 							$(this).find('#lightbox-image-details-currentNumber').html('<a class="crop-square" title="1:1" href="#">crop</a> <a class="crop-rectangle" title="4:3" href="#">crop</a> <a class="crop-wide-rectangle" title="16:9" href="#">crop</a>');
 							$(this).find('.crop-square, .crop-rectangle, .crop-rectangle-wide').click( function(e) {
-								var thisBox = $(this).parents('#jquery-lightbox');
-								thisBox.find('#lightbox-image-details-currentNumber').html('<a class="crop-done" title="" href="#">done</a>');
+								$(this).parents('#jquery-lightbox').find('#lightbox-image-details-currentNumber').html('<a class="crop-done" title="" href="#">done</a>');
 								e.preventDefault();
 								return false;
 							});
 							$(this).find('.crop-square').click( function(e) {
-								thisBox.find('#lightbox-image').imgAreaSelect({
+								$(this).parents('#jquery-lightbox').find('#lightbox-image').imgAreaSelect({
 						        handles: true,
 										aspectRatio: '1:1',
 						        onSelectEnd: function (img, selection) {
@@ -221,7 +220,7 @@ jQuery.fn.extend({
 						    });
 							});
 							$(this).find('.crop-rectangle').click( function(e) {
-								thisBox.find('#lightbox-image').imgAreaSelect({
+								$(this).parents('#jquery-lightbox').find('#lightbox-image').imgAreaSelect({
 						        handles: true,
 										aspectRatio: '4:3',
 						        onSelectEnd: function (img, selection) {
@@ -230,7 +229,7 @@ jQuery.fn.extend({
 						    });
 							});
 							$(this).find('.crop-rectangle-wide').click( function(e) {
-								thisBox.find('#lightbox-image').imgAreaSelect({
+								$(this).parents('#jquery-lightbox').find('#lightbox-image').imgAreaSelect({
 						        handles: true,
 										aspectRatio: '16:9',
 						        onSelectEnd: function (img, selection) {
