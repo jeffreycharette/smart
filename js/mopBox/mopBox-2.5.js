@@ -201,7 +201,7 @@ jQuery.fn.extend({
                 submit: 'Upload',
                 tooltip: "Click to upload"
             });
-            $('.imglist a').lightBox();
+            //$('.imglist a').lightBox();
         });
         mpBxF = {
             init: function () {
