@@ -202,12 +202,14 @@ jQuery.fn.extend({
                 tooltip: "Click to upload"
             });
             $('.imglist a').lightBox();
-						$('.imglist a').imgAreaSelect({
-						        handles: true,
-						        onSelectEnd: function (img, selection) {
-										  alert('width: ' + selection.width + '; height: ' + selection.height);
-										}
-						    });
+						$('#lightbox-image').live('click', function(el) {
+							$(this).imgAreaSelect({
+					        handles: true,
+					        onSelectEnd: function (img, selection) {
+									  alert('width: ' + selection.width + '; height: ' + selection.height);
+									}
+					    });
+						});
         });
         mpBxF = {
             init: function () {
