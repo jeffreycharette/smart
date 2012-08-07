@@ -643,10 +643,8 @@ float:left;
 
 .imglist img {
 border:1px solid #E6E6E6;
-height:100px;
 margin:0;
 padding:2px;
-width:100px;
 }
 .imglist img:hover, .imglist img.active {
 border:1px solid #080000;
@@ -659,10 +657,8 @@ padding:0;
 .imglist li {
 float:left;
 font-size:4em;
-height:100px;
 margin:0px 15px 15px 0;
 text-align:center;
-width:100px;
 }
 
 .imgbox {
