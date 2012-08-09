@@ -968,15 +968,6 @@ text-transform: none;
 
 /* industries gallery */
 
-#studios {
-	clear: both;
-	overflow: hidden;
-	width: 100%;
-}
-#studios img {
-	margin-bottom: 10px;
-}
-
 /* Locations */
 h3.section-headline, .section-headline-no-line {
 	background: transparent url('images/bg-dt.gif') repeat-x 0 100%;
@@ -992,7 +983,13 @@ h3.section-headline, .section-headline-no-line {
 	margin-bottom: 0;
 }
 #studios {
+	clear: both;
 	margin-bottom: 19px;
+	overflow: hidden;
+	width: 100%;
+}
+#studios img {
+	margin-bottom: 10px;
 }
 #studios figure {
 	float: left;
