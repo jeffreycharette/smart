@@ -1790,11 +1790,11 @@ article.news iframe.video {
 	padding-right: 0;
 }
 
-.subnav li.media a,
-.subnav li.media a:visited,
-.subnav li.media a:active,
-.subnav li.media a:hover,
-.subnav li.media a:focus {
+.media a,
+.media a:visited,
+.media a:active,
+.media a:hover,
+.media a:focus {
 	background: url('images/bg-mailto.png') no-repeat 0 47%;
 	padding-left: 28px;
 }
