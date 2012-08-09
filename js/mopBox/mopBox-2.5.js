@@ -203,8 +203,8 @@ jQuery.fn.extend({
             });
             $('.imglist a').lightBox();
 						$('#jquery-lightbox').live('open', function(e) {
-							$('#jquery-lightbox').find('#lightbox-nav').hide();
-							console.log($('#jquery-lightbox'));
+							$('#jquery-lightbox #lightbox-nav').hide();
+							console.log($('#jquery-lightbox #lightbox-nav'));
 							$('#jquery-lightbox').find('#lightbox-image-details-currentNumber').html('<a class="crop-square" title="1:1" href="#">crop</a> <a class="crop-rectangle" title="4:3" href="#">crop</a> <a class="crop-rectangle-wide" title="16:9" href="#">crop</a>');
 							var thisBox = $('#jquery-lightbox');
 							thisBox.find('.crop-square, .crop-rectangle, .crop-rectangle-wide').one('click', function(e) {
