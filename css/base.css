@@ -1305,10 +1305,6 @@ ul.comments {
 /* blogs */
 
 #blogs {
-	background: #F3F3EB url('images/bg-category.gif') repeat-x 0 0;
-	border-right: 1px #ECECE5 solid;
-	border-bottom: 1px #ECECE5 solid;
-	border-left: 1px #ECECE5 solid;
 	float: right;
 	max-height: 604px;
 	overflow: hidden;
