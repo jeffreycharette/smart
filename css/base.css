@@ -1021,7 +1021,6 @@ section#working-here {
 	color: #333;
 	line-height: 1em;
 	text-shadow: none;
-	text-transform: uppercase;
 	font-family: 'Helvetica Neue Condensed bold', 'HelveticaNeue-CondensedBold', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 	letter-spacing: 0;
 	font-size:20px;
@@ -1034,6 +1033,9 @@ section#working-here {
 }
 #working-here p {
 	margin-bottom:19px;
+}
+#working-here p.emphasis {
+	line-height: 1.2em;
 }
 #working-here ul {
 	margin:10px;
@@ -1068,6 +1070,7 @@ aside {
 	border: 1px #ECECE5 solid;
 	border-top: none;
 	float: right;
+	overflow: hidden;
 	padding: 15px 16px 0 16px;
 	margin: 0 0 19px 0;
 	width: 281px;
