@@ -979,7 +979,7 @@ text-transform: none;
 
 /* Locations */
 h3.section-headline {
-	border-bottom: 1px #666666 solid;
+	background: transparent url('images/bg-dt.gif') repeat-x 0 100%;
 	color: #333333;
 	font-family: 'Helvetica Neue Condensed Bold', 'HelveticaNeue-CondensedBold', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 	margin-bottom: 19px;
