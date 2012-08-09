@@ -1249,7 +1249,12 @@ ul.comments {
 	width: 147px;
 }
 .latest-wrapper .grid h2 {
+	clear: both;
+	height: 35px;
 	margin-bottom: 0;
+	overflow: hidden;
+	padding: 0;
+	width: 100%;
 }
 .grid article.large {
 	width: 314px;
