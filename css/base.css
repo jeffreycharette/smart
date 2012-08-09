@@ -1064,11 +1064,13 @@ section.grid-four p, aside.grey p {
 	padding-bottom: 12px;
 }
 aside.grey {
-	background-color: #f1f1f2;
+	background: #F3F3E6 url('images/bg-category.gif') repeat-x 0 0;
+	border: 1px #ECECE5 solid;
+	border-top: none;
 	float: right;
 	padding: 12px 12px 0 12px;
 	margin: 0 2px 19px 0;
-	width: 290px;
+	width: 288px;
 }
 aside.grey p {
 	padding:0;
@@ -1303,6 +1305,10 @@ ul.comments {
 /* blogs */
 
 #blogs {
+	background: #F3F3E6 url('images/bg-category.gif') repeat-x 0 0;
+	border-right: 1px #ECECE5 solid;
+	border-bottom: 1px #ECECE5 solid;
+	border-left: 1px #ECECE5 solid;
 	float: right;
 	max-height: 604px;
 	overflow: hidden;
