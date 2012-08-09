@@ -211,10 +211,10 @@ jQuery.fn.extend({
 								thisBox.find('.crop-done').click( function(e) {
 									console.log('in');
 									thisBox.find('#lightbox-image-details-currentNumber').html('<a class="crop-square" title="1:1" href="#">crop</a> <a class="crop-rectangle" title="4:3" href="#">crop</a> <a class="crop-rectangle-wide" title="16:9" href="#">crop</a>');
-									var selection = thisBox.find('#lightbox-image').getSelection();
+									var selection = croppedBox.getSelection();
 									console.log(selection);
 									alert('width: ' + selection.width + '; height: ' + selection.height);
-									thisBox.find('#lightbox-image').imgAreaSelect({
+									croppedBox.imgAreaSelect({
 										remove: true
 									});
 								});
