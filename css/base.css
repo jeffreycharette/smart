@@ -978,7 +978,7 @@ text-transform: none;
 }
 
 /* Locations */
-h3.section-headline {
+h3.section-headline, .section-headline-no-line {
 	background: transparent url('images/bg-dt.gif') repeat-x 0 100%;
 	color: #333333;
 	font-family: 'Helvetica Neue Condensed Bold', 'HelveticaNeue-CondensedBold', 'Helvetica Neue', Arial, Helvetica, sans-serif;
@@ -986,6 +986,10 @@ h3.section-headline {
 	padding: 0 0 10px;
 	text-transform: uppercase;
 	text-shadow: 0 -1px 1px rgba(51, 51, 51, .2);
+}
+.section-headline-no-line {
+	background: none;
+	margin-bottom: 0;
 }
 #studios {
 	margin-bottom: 19px;
