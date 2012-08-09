@@ -1060,29 +1060,29 @@ section.grid-four {
 	float: left;
 	width: 590px;
 }
-section.grid-four p, aside.grey p {
+section.grid-four p {
 	padding-bottom: 12px;
 }
-aside.grey {
-	background: #F3F3E6 url('images/bg-category.gif') repeat-x 0 0;
+aside {
+	background: #F3F3EB url('images/bg-category.gif') repeat-x 0 0;
 	border: 1px #ECECE5 solid;
 	border-top: none;
 	float: right;
-	padding: 12px 12px 0 12px;
+	padding: 15px 16px 0 16px;
 	margin: 0 2px 19px 0;
 	width: 288px;
 }
-aside.grey p {
-	padding:0;
-	margin-bottom:19px;
-}
-aside.grey ul {
-	margin: 19px 39px 19px 19px;	
-}
-aside.grey ul li {
+aside p {
+	padding: 0;
 	margin-bottom: 19px;
 }
-aside.grey h4 {
+aside ul {
+	margin: 19px 39px 19px 19px;	
+}
+aside ul li {
+	margin-bottom: 19px;
+}
+aside h4 {
 	border-bottom: 1px #666666 solid;
 	color: #333333;
 	font-family: 'HelveticaNeue', 'Helvetica Neue', Arial, Helvetica, sans-serif;
@@ -1305,7 +1305,7 @@ ul.comments {
 /* blogs */
 
 #blogs {
-	background: #F3F3E6 url('images/bg-category.gif') repeat-x 0 0;
+	background: #F3F3EB url('images/bg-category.gif') repeat-x 0 0;
 	border-right: 1px #ECECE5 solid;
 	border-bottom: 1px #ECECE5 solid;
 	border-left: 1px #ECECE5 solid;
@@ -1315,13 +1315,9 @@ ul.comments {
 	width: 315px;
 }
 #blogs article {
-	background-color: #f3f3eb;
 	clear: both;
-	padding: 15px 16px 0 16px;
+	padding-bottom: 15px;
 	overflow: auto;
-}
-#blogs article.last {
-	padding-bottom: 16px;
 }
 #blogs article img {
 	float: right;
@@ -1351,9 +1347,10 @@ ul.comments {
 	color: #333333;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, .5);
 }
-#blogs article p {
+#blogs aside article p {
 	color: #333333;
 	font-size: .76em;
+	margin-bottom: 0;
 }
 
 /* expertise section */
