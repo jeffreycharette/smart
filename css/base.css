@@ -386,7 +386,7 @@ a.social-header:focus {
 }
 .social li a:hover {
 	background-color: transparent;
-	background-image: url('images/bg-social.gif');
+	background-image: url('images/bg-social-tan.gif');
 	background-repeat: no-repeat;
 }
 .social li.twitter a:hover, 
