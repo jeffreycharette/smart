@@ -952,7 +952,7 @@ text-transform: none;
 	margin: 0 3px;
 }
 #grid figcaption h2 {
-	padding: 10px 0;
+	padding: 10px 0 0;
 }
 .grid-four {
 	position: relative;
@@ -1372,7 +1372,7 @@ ul.comments {
 /* article-list */
 
 #article-list {
-	background: #F3F3EB url('images/bg-category.gif') repeat-x 0 0;
+	background: #F3F3EB;
 	border-right: 1px #ECECE5 solid;
 	border-left: 1px #ECECE5 solid;
 	clear: both;
@@ -1438,14 +1438,12 @@ ul.comments {
 /*thinking */
 
 #thinking-detail {
-background: #F3F3E6 url('images/bg-category.gif') repeat-x 0 0;
+background: #F3F3EB url('images/bg-category.gif') repeat-x 0 0;
 border-right: 1px #ECECE5 solid;
-border-bottom: 1px #ECECE5 solid;
 border-left: 1px #ECECE5 solid;
 clear: both;
-margin-bottom:19px;
 overflow: hidden;
-padding:24px;
+padding: 60px 24px 24px;
 }
 
 /* related articles */
