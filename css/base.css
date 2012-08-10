@@ -1465,7 +1465,7 @@ padding: 70px 24px 24px;
 /* related articles */
 
 #related-list {
-	background: #F3F3E6;
+	background: #F3F3EB url('images/bg-category.gif') repeat-x 0 0;
 	border-right: 1px #ECECE5 solid;
 	border-bottom: 1px #ECECE5 solid;
 	border-left: 1px #ECECE5 solid;
