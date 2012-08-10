@@ -1443,7 +1443,16 @@ border-right: 1px #ECECE5 solid;
 border-left: 1px #ECECE5 solid;
 clear: both;
 overflow: hidden;
-padding: 60px 24px 24px;
+padding: 80px 24px 24px;
+}
+
+#thinking-detail a:link,
+#thinking-detail a:active,
+#thinking-detail a:hover,
+#thinking-detail a:visited,
+#thinking-detail a:focus {
+	font-weight: bold;
+	color: #FF6A11;
 }
 
 /* related articles */
