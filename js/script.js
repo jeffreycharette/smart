@@ -34,7 +34,7 @@ $(function() {
 	$('.industries li:nth-child(6n)').css({ 'padding-right':0 });
 
 /* Work Layout */
-	var workCount = 4,
+	var workCount = 5,
 			loadCount = workCount,
 			workLength = $('#work article').length;
 			
