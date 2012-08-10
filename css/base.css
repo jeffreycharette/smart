@@ -2111,12 +2111,12 @@ footer dl.lined-right {
 footer dl.lined-right ul li {
 	margin-bottom: 14px;
 }
-footer .social {
+footer .social, aside .social {
 	background: transparent url('images/bg-footer-social.gif') no-repeat 0 0;
 	margin-bottom: 17px;
 	width: auto;
 }
-footer .social li {
+footer .social li, aside .social li {
 	padding-right: 8px;
 }
 
