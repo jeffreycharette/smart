@@ -34,8 +34,12 @@ $(function() {
 	$('.industries li:nth-child(6n)').css({ 'padding-right':0 });
 
 /* Work Layout */
-	var workCount = 5,
-			loadCount = workCount,
+	var workCount = 5;
+	
+	if ($('#work').hasClass('thinking')) {
+		workCount = 4;
+	}
+	var loadCount = workCount,
 			workLength = $('#work article').length;
 			
 	// Add class to show first workCount elements
