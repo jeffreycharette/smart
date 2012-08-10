@@ -371,8 +371,7 @@ a.social-header:focus {
 .social li {
 	float: left;
 	height: 17px;
-	padding-right: 4px;
-	width: 16px;
+	width: 17px;
 	text-indent: -9009px;
 }
 .social li a:link,
@@ -2119,13 +2118,11 @@ footer .social, aside .social {
 aside .social {
 	margin: 2px 0 0 0;
 }
-aside .social {
-	background: transparent url('images/bg-social-tan.gif') no-repeat 0 0;
-	margin-bottom: 17px;
-	width: auto;
+aside .social li {
+	padding-right: 0;
 }
 footer .social li {
-	padding-right: 8px;
+	padding-right: 2px;
 }
 
 /* vcard */
