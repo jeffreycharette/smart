@@ -1372,7 +1372,7 @@ ul.comments {
 /* article-list */
 
 #article-list {
-	background: #F3F3EB;
+	background: #F3F3EB url('images/bg-dt.gif') repeat-x 0 0;
 	border-right: 1px #ECECE5 solid;
 	border-left: 1px #ECECE5 solid;
 	clear: both;
