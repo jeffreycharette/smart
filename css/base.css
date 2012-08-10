@@ -399,11 +399,11 @@ a.social-header:focus {
 }
 .social li.linkedin a:hover, 
 .social li.linkedin a:focus {
-	background-position: -39px -20px;
+	background-position: -40px -20px;
 }
 .social li.rss a:hover, 
 .social li.rss a:focus {
-	background-position: -59px -20px;
+	background-position: -60px -20px;
 }
 .social li.vimeo a:hover, 
 .social li.vimeo a:focus {
