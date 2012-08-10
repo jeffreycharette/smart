@@ -381,7 +381,7 @@ a.social-header:focus {
 	height: 100%;
 	width: 100%;
 }
-.social li.rss {
+.social li.vimeo {
 	padding-right: 0;
 }
 .social li a:hover {
@@ -407,7 +407,7 @@ a.social-header:focus {
 }
 .social li.vimeo a:hover, 
 .social li.vimeo a:focus {
-	background-position: -78px -20px;
+	background-position: -80px -20px;
 }
 
 /* tertiary navigation */
