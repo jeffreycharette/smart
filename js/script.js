@@ -245,7 +245,10 @@ $(".tweet").tweet({
 	/* localScroll (capabilities page / all inline links) */
 	$.localScroll.hash();
 	$.localScroll({hash:true});
-	$('.left-column ul li:odd').css({'margin-right':0});
+	
+	$('.left-column').each( function() {
+		$(this).find('ul li:odd').addClass('odd');
+	});
 	
 	/* search results */
 	$('#search-results ol li:odd').addClass('odd');
