@@ -371,7 +371,7 @@ a.social-header:focus {
 .social li {
 	float: left;
 	height: 17px;
-	width: 18px;
+	width: 17px;
 	text-indent: -9009px;
 }
 .social li a:link,
@@ -407,7 +407,7 @@ a.social-header:focus {
 }
 .social li.vimeo a:hover, 
 .social li.vimeo a:focus {
-	background-position: -79px -20px;
+	background-position: -80px -20px;
 }
 
 /* tertiary navigation */
