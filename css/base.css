@@ -890,6 +890,12 @@ article.small h2,
 /* grid layout */
 /* about, people */
 
+#grid {
+	clear: both;
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+
 #grid article, #grid figure {
 	float: left;
 	margin: 0px 19px 7px 0px;
@@ -920,6 +926,8 @@ article.small h2,
 }
 #grid h2 {
 	font-family: 'HelveticaNeue', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	margin-left: 0;
+	padding-bottom: 0;
 	text-transform: none;
 }
 #related-list h2, #thinking-detail h2 {
