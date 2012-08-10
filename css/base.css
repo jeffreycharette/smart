@@ -2031,7 +2031,7 @@ h2.look-ahead {
 	margin: 19px 19px 19px 0;
 	width: 481px;
 }
-#search-results li.odd, .odd {
+#search-results li.odd, .left-column li.odd {
 	margin-right:0;
 }
 
