@@ -588,7 +588,7 @@ ul.category {
 .slideshow {
 	float: left;
 }
-#gallery img, .grid img, .latest-grid img, .description, #work img, #industries img, #related-list img, #grid img, .grid-four img, img.shadow, #studios img, #grid-working-here img, .tweet_list .tweet_avatar img, #detail img, #blogs article img, #search-results img, #bios img {
+#gallery img, .grid img, .latest-grid img, .description, #work img, #industries img, #related-list img, #grid img, .grid-four img, img.shadow, #studios img, #grid-working-here img, .tweet_list .tweet_avatar img, #detail img, #blogs article img, #search-results img, #bios img, #industry-detail img:nth-of-type(1) {
 	-moz-box-shadow: 0 1px 5px #666666;
 	-webkit-box-shadow: 0 1px 5px #666666;
 	box-shadow: 0 1px 5px #666666;
