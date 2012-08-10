@@ -391,15 +391,23 @@ a.social-header:focus {
 }
 .social li.twitter a:hover, 
 .social li.twitter a:focus {
-	background-position: 0 -20px;
+	background-position: 0 -21px;
 }
 .social li.facebook a:hover, 
 .social li.facebook a:focus {
-	background-position: -20px -20px;
+	background-position: -19px -21px;
+}
+.social li.linkedin a:hover, 
+.social li.linkedin a:focus {
+	background-position: -38px -21px;
 }
 .social li.rss a:hover, 
 .social li.rss a:focus {
-	background-position: -40px -20px;
+	background-position: -57px -21px;
+}
+.social li.vimeo a:hover, 
+.social li.vimeo a:focus {
+	background-position: -76px -21px;
 }
 
 /* tertiary navigation */
