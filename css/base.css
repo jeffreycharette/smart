@@ -2117,7 +2117,7 @@ footer .social, aside .social {
 	width: auto;
 }
 aside .social {
-	margin: 0;
+	margin: 2px 0 0 0;
 }
 aside .social {
 	background: transparent url('images/bg-footer-social.gif') no-repeat 0 0;
