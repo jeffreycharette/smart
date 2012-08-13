@@ -1905,13 +1905,13 @@ h2.look-ahead {
 	float: left;
 	width: 648px;
 }
-
-.four-column h3{
-	float: left;
-	width: 648px;
-	padding-bottom:5px;
+.four-column ul {
+	margin: 0 39px 19px 19px;
+	text-indent: -10px;
 }
-
+.four-column li {
+	padding-bottom: 12px;
+}
 .caption {
 	font-family: 'Helvetica Neue', 'HelveticaNeue', Arial, Helvetica, sans-serif;
 	font-size: .875em;
@@ -1957,9 +1957,7 @@ h2.look-ahead {
 	overflow:hidden;
 	margin-right:19px;
 	float:left;
-	
 }
-
 
 /*About: Location: SF */
 .small-bar {
