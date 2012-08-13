@@ -1114,11 +1114,11 @@ ul.clients li {
 
 .client-list {
 	float:left;
-	width: 648px;
+	width: 665px;
 }
 #case-study-wrapper .client-list img {
 	float: left;
-	margin: 0 12px 12px 0;
+	margin: 0 19px 19px 0;
 }
 
 /* tweets */
@@ -1884,9 +1884,9 @@ article.news iframe.video {
 }
 
 .section-column-right {
-	width:316px;
 	float: right;
 	margin-right: 19px;
+	width: 318px;
 }
 
 .section-column-right h3{
