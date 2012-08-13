@@ -61,7 +61,7 @@ $(function() {
 	});
 	
 	if (workCount >= workLength) {
-		$('#load-more').hide();
+		$('#load-more').parent('p').hide();
 	}
 	else {
 		$('#load-more').click( function() {
@@ -81,7 +81,7 @@ $(function() {
 				}
 			});
 			if (loadCount >= workLength) {
-				$('#load-more').hide();
+				$('#load-more').parent('p').hide();
 			}
 		});
 	}
@@ -93,7 +93,7 @@ $(function() {
 	$('#article-list article:gt('+thinkingCount+'), #article-list article:eq('+thinkingCount+')').hide();
 	
 	if ( thinkingCount >= thinkingLength ) {
-		$('#think-more').hide();
+		$('#think-more').parent('p').hide();
 	}
 	else {
 		$('#think-more').click( function() {
