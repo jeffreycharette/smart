@@ -1388,7 +1388,7 @@ ul.comments {
 	border-right: 1px #ECECE5 solid;
 	clear: both;
 	overflow: hidden;
-	padding: 0 24px;
+	padding: 0 19px;
 }
 #article-list article {
 	background: transparent url('images/bg-dt.gif') repeat-x bottom left;
@@ -1415,7 +1415,7 @@ ul.comments {
 .meta {
 	float: left;
 	font-size: .875em;
-	margin: 87px 29px 0 0;
+	margin: 87px 19px 0 0;
 	width: 147px;
 }
 #article-list .meta {
@@ -1431,7 +1431,7 @@ ul.comments {
 }
 #article-list .copy {
 	float: left;
-	width: 480px;
+	width: 445px;
 }
 #article-list .copy a:link,
 #article-list .copy a:visited,
