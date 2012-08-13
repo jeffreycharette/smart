@@ -1112,6 +1112,15 @@ ul.clients li {
 	width: 320px;
 }
 
+.client-list {
+	float:left;
+	width: 667px;
+}
+.client-list img {
+	float: left;
+	margin-right: 19px;
+}
+
 /* tweets */
 .tweet {
 	font-size: .875em;
