@@ -89,19 +89,21 @@ $(function() {
 	var thinkingCount = 4,
 			thinkingLoad = thinkingCount,
 			thinkingLength = $('#article-list article').length;
+			
+	$('#article-list article:gt('+thinkingCount+')').addClass('hide');
 	
 	if ( thinkingCount >= thinkingLength ) {
-		$('#load-more').hide();
+		$('#think-more').hide();
 	}
 	else {
-		$('#load-more').click( function() {
+		$('#think-more').click( function() {
 			thinkingCount = thinkingCount + thinkingCount;
 		
 			// add class to show more elements
 			$('#article-list article:lt('+thinkingCount+')').addClass('show');
 	
 			if (loadCount == workLength) {
-				$('#load-more').hide();
+				$('#think-more').hide();
 			}
 		});
 	}
