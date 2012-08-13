@@ -1116,9 +1116,9 @@ ul.clients li {
 	float:left;
 	width: 667px;
 }
-.client-list img {
+#case-study-wrapper .client-list img {
 	float: left;
-	margin-right: 19px;
+	margin: 0 19px 0 19px;
 }
 
 /* tweets */
