@@ -1383,8 +1383,9 @@ ul.comments {
 
 #article-list {
 	background: #F3F3EB url('images/bg-dt.gif') repeat-x 0 0;
-	border-right: 1px #ECECE5 solid;
+	border-bottom: 1px #ECECE5 solid;
 	border-left: 1px #ECECE5 solid;
+	border-right: 1px #ECECE5 solid;
 	clear: both;
 	overflow: hidden;
 	padding: 0 24px;
