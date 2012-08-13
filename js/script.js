@@ -91,7 +91,7 @@ $(function() {
 			thinkingLength = $('#article-list article').length;
 			
 	$('#article-list article:gt('+thinkingCount+'), #article-list article:eq('+thinkingCount+')').hide();
-	$('#article-list article:eq('+thinkingCount-1+')').addClass('last');
+	$('#article-list article:visible:last').addClass('last');
 	
 	if ( thinkingCount >= thinkingLength ) {
 		$('#think-more').parent('p').hide();
@@ -102,12 +102,11 @@ $(function() {
 		
 			// add class to show more elements
 			$('#article-list article:lt('+thinkingLoad+')').fadeIn().removeClass('last');
-			$('#article-list article:eq('+thinkingLoad-1+')').addClass('last');
+			$('#article-list article:visible:last').addClass('last');
 	
 			if (thinkingLoad >= thinkingLength) {
 				$('#think-more').parent('p').fadeOut();
 				$('.lined-top').css({ 'border':'none' });
-				$('#article-list article:last').addClass('last');
 			}
 		});
 	}
