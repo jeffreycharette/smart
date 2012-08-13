@@ -90,19 +90,19 @@ $(function() {
 			thinkingLoad = thinkingCount,
 			thinkingLength = $('#article-list article').length;
 			
-	$('#article-list article:gt('+thinkingCount+')').hide();
+	$('#article-list article:gt('+thinkingCount+'), #article-list article:eq('+thinkingCount+')').hide();
 	
 	if ( thinkingCount >= thinkingLength ) {
 		$('#think-more').hide();
 	}
 	else {
 		$('#think-more').click( function() {
-			thinkingCount = thinkingCount + thinkingCount;
+			thinkingLoad = thinkingLoad + thinkingCount;
 		
 			// add class to show more elements
-			$('#article-list article:lt('+thinkingCount+')').fadeIn();
+			$('#article-list article:lt('+thinkingLoad+')').fadeIn();
 	
-			if (loadCount == workLength) {
+			if (thinkingLoad == thinkingLength) {
 				$('#think-more').fadeOut();
 			}
 		});
