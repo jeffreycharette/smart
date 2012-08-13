@@ -1297,10 +1297,16 @@ ul.comments {
 	width: 315px;
 }
 #blogs article {
-	background: #F3F3EB url('images/bg-dt.gif') repeat-x 100% 0;
+	background: transparent url('images/bg-dt.gif') repeat-x 100% 0;
 	clear: both;
-	padding-bottom: 15px;
+	padding-bottom: 10px;
 	overflow: auto;
+	margin-bottom: 5px;
+}
+#blogs article.last {
+	background: none;
+	padding-bottom: 0;
+	margin-bottom: 0;
 }
 #blogs article img {
 	float: right;
