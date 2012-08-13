@@ -1299,13 +1299,12 @@ ul.comments {
 #blogs article {
 	background: transparent url('images/bg-dt.gif') repeat-x 0 100%;
 	clear: both;
-	padding-bottom: 10px;
-	overflow: auto;
 	margin-bottom: 5px;
+	overflow: auto;
+	padding-bottom: 10px;
 }
 #blogs article.last {
 	background: none;
-	padding-bottom: 0;
 	margin-bottom: 0;
 }
 #blogs article img {
