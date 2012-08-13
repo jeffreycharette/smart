@@ -85,6 +85,26 @@ $(function() {
 			}
 		});
 	}
+	
+	var thinkingCount = 4,
+			thinkingLoad = thinkingCount,
+			thinkingLength = $('#article-list article').length;
+	
+	if ( thinkingCount >= thinkingLength ) {
+		$('#load-more').hide();
+	}
+	else {
+		$('#load-more').click( function() {
+			thinkingCount = thinkingCount + thinkingCount;
+		
+			// add class to show more elements
+			$('#article-list article:lt('+thinkingCount+')').addClass('show');
+	
+			if (loadCount == workLength) {
+				$('#load-more').hide();
+			}
+		});
+	}
 
 /* Custom Select */
 $('#industry, #select-contributors, #select-filter, #select-archive').SelectCustomizer();
