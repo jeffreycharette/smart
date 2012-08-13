@@ -1297,7 +1297,7 @@ ul.comments {
 	width: 315px;
 }
 #blogs article {
-	background: transparent url('images/bg-dt.gif') repeat-x 100% 0;
+	background: transparent url('images/bg-dt.gif') repeat-x 0 100%;
 	clear: both;
 	padding-bottom: 10px;
 	overflow: auto;
