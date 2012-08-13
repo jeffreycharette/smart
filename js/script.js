@@ -80,7 +80,7 @@ $(function() {
 					}
 				}
 			});
-			if (loadCount == workLength) {
+			if (loadCount >= workLength) {
 				$('#load-more').hide();
 			}
 		});
@@ -102,7 +102,7 @@ $(function() {
 			// add class to show more elements
 			$('#article-list article:lt('+thinkingLoad+')').fadeIn();
 	
-			if (thinkingLoad == thinkingLength) {
+			if (thinkingLoad >= thinkingLength) {
 				$('#think-more').fadeOut();
 			}
 		});
