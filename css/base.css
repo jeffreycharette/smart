@@ -104,8 +104,8 @@ line-height: 1.1em;
 padding-bottom: 19px;
 }
 h4{
-font-size: 1.8em;
-line-height: 1em;
+font-size: 1.2em;
+line-height: 1.1em;
 }
 p {
 font-size: 1em;
@@ -1070,16 +1070,6 @@ aside ul {
 }
 aside ul li {
 	margin-bottom: 19px;
-}
-aside h4 {
-	border-bottom: 1px #666666 solid;
-	color: #333333;
-	font-family: 'HelveticaNeue', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-	font-size: 1em;
-	font-weight: bold;
-	margin-bottom: 19px;
-	padding: 19px 0 10px;
-	text-shadow: none;
 }
 
 /* Awards */
