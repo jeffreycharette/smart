@@ -104,6 +104,7 @@ $(function() {
 	
 			if (thinkingLoad >= thinkingLength) {
 				$('#think-more').parent('p').fadeOut();
+				$('.lined-top').css({ 'border':'none' });
 			}
 		});
 	}
