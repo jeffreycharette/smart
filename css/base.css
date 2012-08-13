@@ -1412,6 +1412,9 @@ ul.comments {
 .meta p, #detail .meta p {
 	padding-bottom: 3px;
 }
+.meta p.strong, #detail .meta p.strong, #article-list article p.strong {
+	padding-bottom: 0;
+}
 .meta {
 	float: left;
 	font-size: .875em;
@@ -1454,7 +1457,7 @@ border-right: 1px #ECECE5 solid;
 border-left: 1px #ECECE5 solid;
 clear: both;
 overflow: hidden;
-padding: 70px 24px 24px;
+padding: 75px 19px 24px;
 }
 
 #thinking-detail a:link,
