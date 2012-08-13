@@ -103,7 +103,7 @@ $(function() {
 			$('#article-list article:lt('+thinkingLoad+')').fadeIn();
 	
 			if (thinkingLoad >= thinkingLength) {
-				$('#think-more').fadeOut();
+				$('#think-more').parent('p').fadeOut();
 			}
 		});
 	}
