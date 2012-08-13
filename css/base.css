@@ -1071,6 +1071,9 @@ aside ul {
 aside ul li {
 	margin-bottom: 19px;
 }
+aside .small {
+	font-size: .875em;
+}
 
 /* Awards */
 #awards dl {
