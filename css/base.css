@@ -588,7 +588,7 @@ ul.category {
 .slideshow {
 	float: left;
 }
-#gallery img, .grid img, .latest-grid img, .description, #work img, #industries img, #related-list img, #grid img, .grid-four img, img.shadow, #studios img, #grid-working-here img, .tweet_list .tweet_avatar img, #detail img, #blogs article img, #search-results img, #bios img, #industry-detail img:nth-of-type(1) {
+#gallery img, .grid img, .latest-grid img, .description, #work img, #industries img, #related-list img, #grid img, .grid-four img, img.shadow, #studios img, #grid-working-here img, .tweet_list .tweet_avatar img, #detail img, #blogs article img, #search-results img, #bios img, #industry-detail img:nth-of-type(1), #bio-detail img {
 	-moz-box-shadow: 0 1px 5px #666666;
 	-webkit-box-shadow: 0 1px 5px #666666;
 	box-shadow: 0 1px 5px #666666;
@@ -1962,38 +1962,19 @@ h2.look-ahead {
 
 
 /*About: Location: SF */
-
-.side-bar {
-	float: left;
+aside.small-bar {
+	float:left;
 	font-size: .875em;
-	margin: 40px 29px 0 0;
-	width: 147px;
-}
-.side-bar-right {
-	float: right;
-	font-size: .875em;
-	margin: 40px 29px 0 0;
-	width: 314px;
-}
-.side-bar-top {
-	float: left;
-	font-size: .875em;
-	margin: 0px 29px 0 0;
-	width: 147px;
-}
-.side-bar-section {
-	float: left;
-	font-size: .875em;
-	margin: 40px 29px 0 0;
+	margin-right: 19px;
 	width: 147px;
 }
 .three-column {
+	float: left;
 	width: 450px;
-	float:left;
 }
 
 #getting-here {
-	width:314px;
+	width: 314px;
 }
 #getting-here img{
 	margin: 19px;
