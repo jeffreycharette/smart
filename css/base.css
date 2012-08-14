@@ -1076,21 +1076,22 @@ aside .small {
 
 /* Awards */
 #awards dl {
-		background: #F3F3EB url('images/bg-category.gif') repeat-x 0 0;
-		border-right: 1px #ECECE5 solid;
-		border-bottom: 1px #ECECE5 solid;
-		border-left: 1px #ECECE5 solid;
-		clear: both;
-		margin-bottom: 20px;
-		overflow: hidden;
-		padding: 15px 4px 9px 24px;
+	clear: both;
+	float: left;
+	margin: 0 19px 19px 0;
+	overflow: hidden;
+	width: 481px;
 }
 #awards dt {
-	color: #333;
+	background: transparent url('images/bg-award.gif') no-repeat 0 0;
+	color: #FFFFFF;
+	float: left;
 	font-family: 'Helvetica Neue Bold', 'HelveticaNeue-Bold', Arial, Helvetica, sans-serif;
 	font-size: 1.35em;
-	margin: 8px 0 13px 0;
+	height: 147px;
+	margin-right: 19px;
 	text-shadow: 0 -1px 1px rgba(51, 51, 51, .2);
+	width: 147px;
 }
 #awards dd {
 	color: #FF6A11;
