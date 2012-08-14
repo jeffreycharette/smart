@@ -421,6 +421,8 @@ a.social-header:focus {
 }
 .summary ul li {
 	float:left;
+	font-size: .8125em;
+	font-weight: bold;
 	margin: 6px 0 0 0;
 	padding: 0 19px 0 0;
 	width:147px;
@@ -429,8 +431,6 @@ a.social-header:focus {
 .summary ul li a:visited,
 .summary ul li a:active {
 	color: #333333;
-	font-size: .8125em;
-	font-weight: bold;
 	display: block;
 }
 .summary ul li a:hover,
