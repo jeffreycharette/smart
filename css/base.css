@@ -1223,7 +1223,7 @@ ul.comments {
 .full, .summary {
 	clear: both;
 	margin-bottom: 37px;
-	overflow: auto;
+	overflow: hidden;
 	width: 100%;
 }
 .full .half {
