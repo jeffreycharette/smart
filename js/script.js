@@ -110,6 +110,10 @@ $(function() {
 			}
 		});
 	}
+	
+/* Awards */
+
+$('#awards dl:odd').css({ 'margin-right': 0 });
 
 /* Custom Select */
 $('#industry, #select-contributors, #select-filter, #select-archive').SelectCustomizer();
