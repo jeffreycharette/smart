@@ -1107,7 +1107,9 @@ aside .small {
 	display: block;
 	float: left;
 	min-height: 25px;
-	width: 25px;
+	width: 19px;
+	text-align: right;
+	padding-right: 5px;
 }
 #awards dd a,
 #awards dd a:hover {
