@@ -114,7 +114,7 @@ $(function() {
 /* Awards */
 
 $('#awards dl:odd').css({ 'margin-right': 0 });
-$('#awards dl dd:even').css({ 'background-color': '#F6F6F6' });
+$('#awards dl').find('dd:even').css({ 'background-color': '#F6F6F6' });
 
 /* Custom Select */
 $('#industry, #select-contributors, #select-filter, #select-archive').SelectCustomizer();
