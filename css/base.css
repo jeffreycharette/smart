@@ -1103,6 +1103,12 @@ aside .small {
 	top: 19px;
 	width: 314px;
 }
+#awards .number {
+	display: block;
+	float: left;
+	min-height: 25px;
+	width: 25px;
+}
 #awards dd a,
 #awards dd a:hover {
 	font-weight: normal;
