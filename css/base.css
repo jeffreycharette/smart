@@ -205,6 +205,7 @@ color:#FF6A11;
 	font-weight: bold;
 	line-height: 1.2em;
 	padding: 0 0 14px;
+	text-transform: none;
 }
 
 a.external,
