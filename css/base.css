@@ -943,7 +943,7 @@ article.small h2,
 	padding: 0;
 }
 #grid h2, h2.allcaps {
-	font-size: 1.3em;
+	font-size: 1.25em;
 }
 h2.allcaps {
 font-family: 'Helvetica Neue', 'HelveticaNeue', Arial, Helvetica, sans-serif;
@@ -1656,7 +1656,7 @@ hgroup.yellow-wrapper-small::after {
 	padding-top: 10px;
 }
 #detail hgroup h3 {
-	font-size: 1.3em;
+	font-size: 1.25em;
 	line-height: 1.2em;
 }
 #detail p {
