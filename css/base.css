@@ -198,7 +198,7 @@ color:#A5B73F;
 .orange {
 color:#FF6A11;
 }
-.emphasis {
+.emphasis, .hero h2 {
 	color:#333333;
 	font-family: 'HelveticaNeue', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 	font-size: 1.2em;
@@ -1215,10 +1215,13 @@ ul.comments {
 	border-bottom: 1px #CCCCCC solid;
 	margin-bottom: 32px;
 }
-.half {
+.half, .hero p {
 	float: left;
-	margin-right: 22px;
-	width: 480px;
+	margin-right: 19px;
+	width: 481px;
+}
+.hero p + p {
+	margin-right: 0;
 }
 .full, .summary {
 	clear: both;
