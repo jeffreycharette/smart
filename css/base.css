@@ -297,7 +297,7 @@ nav ul li {
 	float: left;
 	list-style: none;
 }
-#primary {
+#primary ul {
 	position: absolute;
 	right: 0;
 	top: 29px;
