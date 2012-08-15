@@ -198,13 +198,13 @@ color:#A5B73F;
 .orange {
 color:#FF6A11;
 }
-.emphasis, .hero h2 {
+.emphasis, #feature .hero h2 {
 	color:#333333;
 	font-family: 'HelveticaNeue', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 	font-size: 1.2em;
 	font-weight: bold;
 	line-height: 1.2em;
-	padding-bottom: 14px;
+	padding: 0 0 14px;
 }
 
 a.external,
