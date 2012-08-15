@@ -460,7 +460,7 @@ ul li.last {
 
 /* sub navigation */
 
-ul.subnav {
+.subnav ul {
 	clear: both;
 	overflow: auto;
 	margin-bottom: 15px;
