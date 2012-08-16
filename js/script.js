@@ -300,6 +300,8 @@ $(".tweet").tweet({
 		function() {
 			$(this).find('img:first').stop().animate({opacity:1});	
 	});
+	
+	// adds class to every 3rd element
 	$('#studios figure:nth-child(3n)').addClass('last');
 	
 	/* modal code not used */
