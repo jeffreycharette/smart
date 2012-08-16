@@ -37,7 +37,8 @@ $(function() {
 	var workCount = 5;
 	
 	if ($('#work').hasClass('thinking')) {
-		//workCount = 4;
+		workCount = 100;
+		$('#load-more').parent('p').hide();
 	}
 	var loadCount = workCount,
 			workLength = $('#work article').length;
