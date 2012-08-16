@@ -300,6 +300,7 @@ $(".tweet").tweet({
 		function() {
 			$(this).find('img:first').stop().animate({opacity:1});	
 	});
+	$('#studios figure:nth-child(3n)').addClass('last');
 	
 	/* modal code not used */
 	
