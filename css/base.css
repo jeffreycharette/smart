@@ -1754,6 +1754,10 @@ hgroup.yellow-wrapper-small::after {
 	position: relative;
 	top: 160px;
 }
+#bios a:link figcaption,
+#bios a:visited figcaption {
+	color: #333333;
+}
 
 #bios img {
 	height: 147px;
