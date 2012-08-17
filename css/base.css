@@ -175,28 +175,28 @@ font:.7em/1.9em "Trebuchet MS", Arial, Helvetica, sans-serif;
 /* COLORS */
 
 .red, .error {
-color:#DF282E;
+color: #DF282E;
 }
 .white {
-color:#FFFFFF;
+color: #FFFFFF;
 }
 .black {
-color:#333333;
+color: #333333;
 }
 .grey {
-color:#666666;
+color: #666666;
 }
 .blue {
-color:#85CCE5;
+color: #85CCE5;
 }
 .yellow {
-color:#F0C337;
+color: #F0C337;
 }
 .green {
-color:#A5B73F;
+color: #A5B73F;
 }
 .orange {
-color:#FF6A11;
+color: #FF6A11;
 }
 .emphasis, #feature .hero h2 {
 	color:#333333;
@@ -1755,8 +1755,13 @@ hgroup.yellow-wrapper-small::after {
 	top: 160px;
 }
 #bios a:link figcaption,
-#bios a:visited figcaption {
+#bios a:visited figcaption,
+#bios a:active figcaption {
 	color: #333333;
+}
+#bios a:hover figcaption,
+#bios a:focus figcaption {
+	color: #FF6A11;
 }
 
 #bios img {
