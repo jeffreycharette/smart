@@ -457,10 +457,15 @@ else {
 						
 						if ($arr[$k]['tpl']!="") {
 							if ($options['tpl']!="") {
-								$result=$read_db->query("SELECT value FROM entities WHERE id='".$options['tpl']."'");
-								if ($read_db->numRows($result) > 0) {
-									$row = $read_db->fetchArray();
-									$arr[$k]['tpl']=$row['value'];
+								if ($options['tpl'] == "document") {
+									echo $options['tpl'];
+								}
+								else {
+									$result=$read_db->query("SELECT value FROM entities WHERE id='".$options['tpl']."'");
+									if ($read_db->numRows($result) > 0) {
+										$row = $read_db->fetchArray();
+										$arr[$k]['tpl']=$row['value'];
+									}
 								}
 							}
 							if (is_array($v)) {
@@ -908,7 +913,7 @@ else {
 				else {
 					$replace=$val['value'];
 				}
-				if ($key!="tpl" && $key!="id" && $val['type']!="tpl" && $val['type']!="javascript" && $val['type']!="meta") {
+				if ($key!="tpl" && $key!="id" && $val['type']!="query" && $val['type']!="tpl" && $val['type']!="javascript" && $val['type']!="meta") {
 					$value['editor'].="<div class=\"edits\" id=\"set".$key."\"><div class=\"box\"><form name=\"entities\" method=\"post\" action=\"edit.html?id=".$cid."\"><input id=\"submit_check\" type=\"hidden\" value=\"1\" name=\"submit_check\" size=\"15\"/>\n".print_input("id","","",$key,"hidden","")."<input style=\"float:right\" value=\"Publish\" class=\"save\" type=\"submit\" />\n";
 					if ($val['type']=="date" || $val['type']=="daterange") {
 						if (stristr($val['value'],"/")) {
@@ -954,7 +959,7 @@ else {
 			foreach ($value as $key=>$val) {
 				if ($val['type']!="javascript") {
 					$value['tpl'].="<span id=\"".$key."\" class=\"query\"><span class=\"key\">".$key."</span><span class=\"value\">".$val['value']."</span></span>";
-					if ($key!="tpl" && $key!="id" && $val['type']!="tpl") {
+					if ($key!="tpl" && $key!="id" && $val['type']!="query" && $val['type']!="tpl") {
 						$value['editor'].="<div class=\"edits\" id=\"set".$key."\"><div class=\"box\"><form name=\"entities\" method=\"post\" action=\"edit.html?id=".$cid."\"><input id=\"submit_check\" type=\"hidden\" value=\"1\" name=\"submit_check\" size=\"15\"/>\n".print_input("id","","",$key,"hidden","")."<input style=\"float:right\" value=\"Publish\" class=\"save\" type=\"submit\" />";
 						if ($val['type']=="text" || $val['type'] == 'link') {
 							$value['editor'].=print_input($key,$val['name'],"",$val['value'],"text"," class=\"".$val['type']."\" ");
