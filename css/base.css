@@ -1451,12 +1451,12 @@ ul.comments {
 #article-list .meta {
 	margin-top: 15px;
 }
-.tags {
+.meta ul {
 	background: transparent url('images/bg-dt.gif') repeat-x 0 0;
 	margin-top: 10px;
 	padding-top: 13px;
 }
-.tags li {
+.meta ul li {
 	padding-bottom: 7px;
 }
 #article-list .copy {
